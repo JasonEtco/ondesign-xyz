@@ -5,13 +5,20 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        shell: {
-            jekyllBuild: {
-                command: 'jekyll build'
+
+        jekyll: {
+            working: {
+              options: {
+                config: '_config.yml',
+                drafts: true
+              }
             },
 
-            jekyllDrafts: {
-                command: 'jekyll build --drafts'
+            deploy: {
+              options: {
+                config: '_config.yml',
+                drafts: false
+              }
             }
         },
 
@@ -29,7 +36,7 @@ module.exports = function(grunt) {
         postcss: {
           options: {
             processors: [
-              require('autoprefixer-core')({browsers: ['last 2 versions', '> 5%']})
+              require('autoprefixer')({browsers: ['last 2 versions', '> 5%']})
             ]
           },
 
@@ -46,21 +53,21 @@ module.exports = function(grunt) {
                     '_sass/**/*.scss',
                     'css/*.scss'
                 ],
-                tasks: ['shell:jekyllBuild', 'uglify', 'postcss']
+                tasks: ['jekyll', 'uglify', 'postcss']
             },
 
             js: {
                 files: [
                     '_js/*.js'
                 ],
-                tasks: ['shell:jekyllBuild', 'uglify', 'postcss']
+                tasks: ['jekyll', 'uglify', 'postcss']
             },
 
             svg: {
                 files: [
                     '_svgs/*.svg'
                 ],
-                tasks: ['svgstore', 'shell:jekyllBuild', 'uglify', 'postcss']
+                tasks: ['svgstore', 'jekyll', 'uglify', 'postcss']
             },
 
             jekyll: {
@@ -72,7 +79,7 @@ module.exports = function(grunt) {
                     '*.html',
                     '*.md'
                 ],
-                tasks: ['shell:jekyllBuild', 'uglify', 'postcss']
+                tasks: ['jekyll', 'uglify', 'postcss']
             },
 
             options: {
@@ -145,20 +152,18 @@ module.exports = function(grunt) {
 
     });
 
-    grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-express');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-build-control');
     grunt.loadNpmTasks('grunt-svgstore');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-newer');
+    grunt.loadNpmTasks('grunt-jekyll');
 
 
-    grunt.registerTask('default', ['svgstore', 'newer:imagemin:tiles', 'newer:imagemin:images', 'shell:jekyllDrafts', 'uglify', 'postcss', 'express', 'watch']);
-    grunt.registerTask('deploy',  ['svgstore', 'newer:imagemin:tiles', 'newer:imagemin:images', 'shell:jekyllBuild', 'uglify', 'postcss', 'buildcontrol:pages']);
-    grunt.registerTask('img',  ['imagemin:static']);
+    grunt.registerTask('default', ['svgstore', 'newer:imagemin', 'jekyll:working', 'uglify', 'postcss', 'express', 'watch']);
+    grunt.registerTask('deploy',  ['svgstore', 'newer:imagemin', 'jekyll:deploy', 'uglify', 'postcss']);
 
     grunt.task.registerTask('post', 'Create new jekyll posts from templates.', function() {
       var name = grunt.option('name'),

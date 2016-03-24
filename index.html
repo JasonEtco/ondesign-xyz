@@ -4,6 +4,14 @@ layout: default
 
 <section class="section--home">
     
-    
+    {% for post in site.posts %}
+        
+        <article class="home__article scene-element scene-element--fade-in-down" style="animation-delay: {{ forloop.index | divided_by: 7.00 }}s;">
+            <a href="{{ post.url }}" class="home__link">
+				<h2>{{ post.title }}</h2>
+            </a>
+        </article>
+
+    {% endfor %}
 
 </section>
