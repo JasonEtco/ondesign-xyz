@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+	<header class="post__header">
+		<h1 class="post__title scene-element scene-element--fade-in-up" itemprop="name headline">{{ page.title }}</h1>
+
+		<p class="post__desc scene-element scene-element--fade-in-up">
+			{% if page.description %}
+				{{ page.description }}
+			{% else %}
+				How’s business? Boomin. The key is to enjoy life, because they don’t want you to enjoy life.
+			{% endif %}
+		</p>
+
+		<span class="post__scroll">Scroll</span>
+
+		<div class="post__header-image-wrapper scene-element scene-element--fade-in"><div class="post__header-image" id="post__header-image" style="background-image: url(/assets/large/{{ page.shortname }}_large.jpg)"></div></div>
+	</header>
+
+	<div class="post__content" itemprop="articleBody">
+		{{ content }}
+	</div>
+
+</article>
+
+{% include footer.html %}

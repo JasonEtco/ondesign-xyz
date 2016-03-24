@@ -1,0 +1,26 @@
+html, body, #main {
+	height: 100%;
+}
+
+body {
+	background: $darkgrey;
+}
+
+h1, h2 {
+	font-family: $title-stack;
+}
+
+h3, h4, h5, h6 {
+	font-family: $body-stack;
+	letter-spacing: 0.1em;
+}
+
+h3 {
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 1.4em;
+}
+
+span, p, a, button {
+	font-family: $body-stack;
+}
