@@ -23,7 +23,6 @@
     "grunt-express": "latest",
     "grunt-newer": "latest",
     "grunt-postcss": "latest",
-    "grunt-svgstore": "latest",
     "time-grunt": "latest",
     "grunt-jekyll": "latest",
     "imagemin-mozjpeg": "latest"

@@ -63,13 +63,6 @@ module.exports = function(grunt) {
                 tasks: ['jekyll', 'uglify', 'postcss']
             },
 
-            svg: {
-                files: [
-                    '_svgs/*.svg'
-                ],
-                tasks: ['svgstore', 'jekyll', 'uglify', 'postcss']
-            },
-
             jekyll: {
                 files: [
                     '**/*.html',
@@ -77,7 +70,8 @@ module.exports = function(grunt) {
                     '_posts/*.md',
                     '_config.yml',
                     '*.html',
-                    '*.md'
+                    '*.md',
+                    '!_site/**/*'
                 ],
                 tasks: ['jekyll', 'uglify', 'postcss']
             },
@@ -91,18 +85,6 @@ module.exports = function(grunt) {
             main: {
                 files: {
                     '_site/main.js': '_js/*.js'
-                }
-            }
-        },
-
-        svgstore: {
-            options: {
-                prefix : '', // This will prefix each <g> ID
-                includeTitleElement : false,
-            },
-            default : {
-                files: {
-                    '_includes/svg-defs.html': ['_svgs/*.svg'],
                 }
             }
         },
@@ -156,14 +138,13 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-express');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-svgstore');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-newer');
     grunt.loadNpmTasks('grunt-jekyll');
 
 
-    grunt.registerTask('default', ['svgstore', 'newer:imagemin', 'jekyll:working', 'uglify', 'postcss', 'express', 'watch']);
-    grunt.registerTask('deploy',  ['svgstore', 'newer:imagemin', 'jekyll:deploy', 'uglify', 'postcss']);
+    grunt.registerTask('default', ['newer:imagemin', 'jekyll:working', 'uglify', 'postcss', 'express', 'watch']);
+    grunt.registerTask('deploy',  ['newer:imagemin', 'jekyll:deploy', 'uglify', 'postcss']);
 
     grunt.task.registerTask('post', 'Create new jekyll posts from templates.', function() {
       var name = grunt.option('name'),

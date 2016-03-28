@@ -4,40 +4,22 @@ title: I Hate ITC Garamond
 author: Michael Beirut
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus reprehenderit pariatur, recusandae consectetur reiciendis. Error recusandae excepturi accusamus voluptatem adipisci modi enim, minima in quisquam blanditiis molestias suscipit vitae esse!
 ---
-### The Problem
-E3 is a computer and video game trade show held annually in Los Angeles, California. The name, E3, stands for “Electronic Entertainment Expo”. E3 hosts major companies like Apple, Microsoft, Sony and a number of high profile video game developers like EA Games and Nintendo. Their website and brand didn't properly reflect the event, so I remade them.
+My daughter Liz called me from college to recommend a book she had been assigned for a political science class: Mr. Truman's War by J. Robert Moskin, a non-fiction account of the end of World War II and the dawn of the Cold War. On Amazon, I learned it was out of print, but she was so enthusiastic about it that I tracked down a used copy.
 
-<video preload="metadata" loop autoplay tabindex="0">
-	<source src="{{ imagePath }}_logo.webm" type="video/webm">
-	<source src="{{ imagePath }}_logo.mp4" type="video/mp4">
-	<p>Your browser does not support the video tag.</p>
-</video>
+It arrived in the mail a few weeks later, and I opened it to receive a ghastly, devastating shock. The entire book, all 400-plus tightly-packed pages of it, is set in a typeface that I absolutely despise: ITC Garamond.
 
-<div>
-	<img src="{{ imagePath }}_logo-dev.jpg" alt="{{ page.title }}">
-</div>
+> Sorry, Liz, I just don't think I can do it.
 
-### Brand Attitude (Branditude)
-The website needed to communicate the dynamic nature of the event, so busy photography was an important asset in showing the exciting event. This created a challenge of the photography overpowering some of the other important elements, which was solved by balancing out the page with appropriate use of negative space.
+There are lots of typefaces I don't like, but each of them usually has a saving grace. I've always had a distaste for Herman Zapf's Optima, for instance, but I have to admit that there are occasions when it's been used well. Maya Lin's Vietnam Veterans Memorial is an example. But ungainly ITC Garamond repulses me in a visceral way that I have trouble explaining.
 
-<div>
-	<img src="{{ imagePath }}_home.jpg" alt="{{ page.title }}" class="shadow rounded">
-	<img src="{{ imagePath }}_options.jpg" alt="{{ page.title }}">
-</div>
+ITC Garamond was designed in 1975 by Tony Stan for the International Typeface Corporation. Okay, let's stop right there. I'll admit it: the single phrase "designed in 1975 by Tony Stan" conjures up an entire world for me, a world of leisure suits, harvest-gold refrigerators, and "Fly, Robin, Fly" by Silver Convention on the 8-track. A world where font designers were called "Tony" instead of "Tobias" or "Zuzana." Is that the trouble with ITC Garamond? That it's dated? Maybe. Typefaces seem to live in the world differently than other designed objects. Take architecture, for example. As Paul Goldberger writes in his book on the rebuilding of lower Manhattan, Up From Zero, "There are many phases to the relationships we have with buildings, and almost invariably they come around to acceptance." Typefaces, on the other hand, seem to work the other way: they are enthusiastically embraced on arrival, and then they wear out their welcome. Yet there are fonts from the disco era that have been successively revived by new generations. Think of Pump, Aachen, or even Tony Stan's own American Typewriter. But not ITC Garamond.
 
-### Secondary Pages
-The assignment was to design and code only 4 pages of the site. The challenge was of course to keep the same visual style throughout each page while highlighting its purpose. 
+The most distinctive element of the typeface is its enormous lower-case x-height. In theory this improves its legibility, but only in the same way that dog poop's creamy consistency in theory should make it more edible. Some people dislike ITC Garamond because it's a desecration of the sacred memory of Claude Garamond. That part doesn't bother me. For one thing, despite its name, Garamond as we know it appears to be based on typefaces developed by Jean Jannon, who lived about a century after Garamond, and Garamond based his designs on those of Aldus Manutius; it's hard to say where you'd locate authenticity in this complicated history. And I've been stimulated by Emigre's revivals like Mrs. Eaves and Filosofia, which take inspiration from — and bigger liberties with—the work of, respectively, John Baskerville and Giambattista Bodoni with great success. But there are good revivals and bad revivals, and ITC Garamond is one of the latter. 
 
-<div class="flex">
-	<img src="{{ imagePath }}_page-1.jpg" alt="{{ page.title }}" class="shadow rounded">
-	<img src="{{ imagePath }}_page-2.jpg" alt="{{ page.title }}" class="shadow rounded">
-</div>
+There was a moment in time where it seemed that bad type would drive out good type. Reporting on a now-legendary 1987 debate where Paula Scher faced off against Roger Black and denounced ITC Garamond for the simple reason that "it's called Garamond and it's not Garamond," Karrie Jacobs pointed out what was then a cause for widespread alarm: "ITC faces have a way of muscling out the faces from which they were adapted... In the largest of cities, a designer has a great many type suppliers to choose from. If she doesn't want an ITC Garamond, she can get a Berthold or a Linotype version. But in a one-typesetter town, the odds are that the local type shop will offer mainly ITC faces. The distinctions between Garamonds then become moot.
 
-### Responsive Development
-Despite the fact that the assignment did not require the site to be responsive, as a 21st Century website I felt it was necessary to expand the design to fit all devices and screen sizes.
+ITC Garamond is Garamond. Thanks to the internet and the digital typesetting revolution, there's no such thing as a "one-typesetter town" anymore. Too bad. It sounds nice and peaceful.
 
-<video crossorigin="anonymous" preload="metadata" loop autoplay tabindex="0" class="full-width">
-	<source src="{{ imagePath }}_app.webm" type="video/webm">
-	<source src="{{ imagePath }}_app.mp4" type="video/mp4">
-	<p>Your browser does not support the video tag.</p>
-</video>
+ITC Garamond enjoyed its apotheosis when it was adopted as the official corporate typeface of Apple Computer in 1984; adding insult to injury, the font was condensed horizontally eighty percent. Associated with Apple's brilliant packaging and advertising for the next twenty years, the resulting mutation became a part of the global landscape, seeming no less impregnable and unchanging than the Soviet empire. And then, just like global communism, it just went away, replaced overnight with a sleek customized version of Myriad. 
+
+Today, ITC Garamond is no longer ubiquitous, but it pops up in unlikely places and still gives me a nasty start, as in my daughter's book recommendation. I've come to realize that I don't hate it for any rational reason; I hate it like I hate fingernails on a blackboard. I hate it because I hate it. Yet I do know one use of it that I would call an unqualified success: it's the classic poster by Jack Summerford from way back when the typeface was shiny and new, where the nastiness of the typeface and the dissonance of the message combine in one deafening clang. To promote ITC Garamond's arrival in Texas, Summerford used it, in all its monstrous glory, to set a single giant word: <span style="font-family: Helvetica, Arial, Georgia, serif; font-weight: bold;">Helvetica</span>. It's not a good font, but just this once, it made a great punch line.

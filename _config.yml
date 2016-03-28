@@ -1,18 +1,14 @@
 # Site settings
-title: Jason Etcovitch
+title: Type-Texts
 email: jasonetco@gmail.com
-description: "Jason Etcovitch, Toronto-based Graphic Designer and Web Developer. Feel free to contact me if you have an interesting project, or just want to chat about design!"
+description: "Intelligent writings by brilliant people."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://jasonet.co" # the base hostname & protocol for your site
-
-imagepath: "/assets/case-studies/{{ page.shortname }}/{{ page.shortname }}"
-
-github_username:  jasonetco
 
 # Build settings
 markdown: kramdown
 
-permalink: /:title/
+permalink: /articles/:title/
 
 exclude: [
 	.gitignore,

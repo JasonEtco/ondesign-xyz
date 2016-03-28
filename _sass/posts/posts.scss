@@ -1,0 +1,40 @@
+.post {
+	padding: 7rem 0;
+
+	font-size: 1.2em;
+	line-height: 2;
+	color: $darkgrey;
+
+	&__header {
+		max-width: $max-width;
+		margin: 0 auto;
+	}
+
+	&__title {
+		margin: 0;
+	}
+
+	&__author {
+		font-family: $accent-stack;
+		font-size: 11px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		margin: 0;
+		display: inline-block;
+		color: $red;
+	}
+
+	&__content {
+		max-width: $max-width;
+		margin: 0 auto;
+
+		blockquote {
+			font-size: 1.2em;
+			font-weight: bold;
+			font-style: italic;
+			padding: 0;
+			text-align: center;
+			margin: 3em 0;
+		}
+	}
+}

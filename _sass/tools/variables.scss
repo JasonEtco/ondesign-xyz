@@ -1,18 +1,21 @@
 // FONTS
-$body-font: 'Roboto';
-$body-stack: $body-font, Helvetica, Arial, sans-serif;
+$body-font: Georgia;
+$body-stack: $body-font, serif;
 
 $title-font: 'Circular Std';
 $title-stack: $title-font, Helvetica, Arial, sans-serif;
+
+$accent-font: 'Roboto';
+$accent-stack: $accent-font, $title-stack;
 
 
 
 // COLORS
 $almost-white:	#f5f5f5;
 $grey:			#b3b3b3;
-$red:			#ff2424;
 $midgrey:		#868686;
-$darkgrey:		#252525;
+$darkgrey:		#2b2b2b;
+$red:			#EF2424;
 $orange:		#f87000;
 
 
@@ -22,4 +25,4 @@ $anim-time: 0.65s;
 $cubic-bezier: ease-in-out;
 
 
-$post-width: 1024px;
+$max-width: 800px;

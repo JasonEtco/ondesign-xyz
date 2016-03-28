@@ -1,3 +1,6 @@
+*::-moz-selection { background-color: $red; color: $almost-white; }
+*::selection { background-color: $red; color: $almost-white; }
+
 html, body, #main {
 	height: 100%;
 }

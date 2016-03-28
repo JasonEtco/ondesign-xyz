@@ -1,17 +1,27 @@
 ---
 layout: default
 ---
-
-<section class="section--home">
+<section class="section--home scene-element scene-element--fade-in-down">
     
-    {% for post in site.posts %}
-        
-        <article class="home__article scene-element scene-element--fade-in-down" style="animation-delay: {{ forloop.index | divided_by: 7.00 }}s;">
-            <a href="{{ post.url }}" class="home__link">
-				<h2>{{ post.title }}</h2>
-            </a>
-        </article>
+    <div class="home__links">
+	    {% for post in site.posts %}
+	        
+	        <article class="home__article">
+	            <a href="{{ post.url }}" class="home__link">
+					<h2 class="home__title scene-element scene-element--fade-in-down" style="animation-delay: {{ forloop.index | times: 0.25 }}s;">{{ post.title }}</h2>
+					<h3 class="home__author scene-element scene-element--fade-in-down" style="animation-delay: {{ forloop.index | times: 0.25 | plus: 0.1 }}s;">{{ post.author }}</h3>
+	            </a>
+	        </article>
 
-    {% endfor %}
+	    {% endfor %}
+    </div>
+
+    <div class="home__credits">
+    	<p>Designed/Developed by <a href="http://jasonet.co">Jason Etcovitch</a></p>
+    	<p>Written by brilliant people.</p>
+
+    	<a href="https://github.com/JasonEtco" class="home__icon" target="_blank">{% include icon-github.svg %}</a>
+    	<a href="http://jasonet.co" class="home__icon" target="_blank">{% include icon-jasonetco.svg %}</a>
+    </div>
 
 </section>
