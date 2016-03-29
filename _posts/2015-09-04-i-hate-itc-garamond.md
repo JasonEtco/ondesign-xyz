@@ -2,7 +2,6 @@
 layout: post
 title: I Hate ITC Garamond
 author: Michael Beirut
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus reprehenderit pariatur, recusandae consectetur reiciendis. Error recusandae excepturi accusamus voluptatem adipisci modi enim, minima in quisquam blanditiis molestias suscipit vitae esse!
 ---
 My daughter Liz called me from college to recommend a book she had been assigned for a political science class: Mr. Truman's War by J. Robert Moskin, a non-fiction account of the end of World War II and the dawn of the Cold War. On Amazon, I learned it was out of print, but she was so enthusiastic about it that I tracked down a used copy.
 

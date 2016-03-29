@@ -1,8 +1,9 @@
+@import "articles/incomplete-manifesto-for-growth";
+
 .post {
 	padding: 7rem 0;
 
 	font-size: 1.2em;
-	line-height: 2;
 	color: $darkgrey;
 
 	&__header {
@@ -28,6 +29,10 @@
 		max-width: $max-width;
 		margin: 0 auto;
 
+		p {
+			line-height: 2;
+		}
+
 		blockquote {
 			font-size: 1.2em;
 			font-weight: bold;
@@ -35,6 +40,18 @@
 			padding: 0;
 			text-align: center;
 			margin: 3em 0;
+		}
+
+		h2 + p, h3 + p {
+			margin-top: 0;
+		}
+
+		h2 {
+			margin: 2em 0 1em 0;
+
+			& + h3 {
+				margin: 0 0 1em 0;
+			}
 		}
 	}
 }

@@ -1,0 +1,26 @@
+#incomplete-manifesto-for-growth {
+
+	h2 {
+		margin: 1em 0 0 0;
+	}
+	
+	ol {
+		list-style-type: none;
+		padding: 0;
+		counter-reset: quote-counter;
+
+		li {
+			position: relative;
+
+			&::before {
+				content: counter(quote-counter);
+				counter-increment: quote-counter;
+				position: absolute;
+				left: -3rem; 
+				top: 0;
+				color: $red;
+				line-height: 1;
+			}
+		}
+	}
+}
