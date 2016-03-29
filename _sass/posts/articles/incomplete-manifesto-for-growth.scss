@@ -1,4 +1,8 @@
 #incomplete-manifesto-for-growth {
+	
+	.post__content {
+		max-width: none;
+	}
 
 	h2 {
 		margin: 1em 0 0 0;
@@ -10,17 +14,27 @@
 		counter-reset: quote-counter;
 
 		li {
-			position: relative;
+			width: 100%;
 
-			&::before {
-				content: counter(quote-counter);
-				counter-increment: quote-counter;
-				position: absolute;
-				left: -3rem; 
-				top: 0.5rem;
-				color: $red;
-				line-height: 1;
+			.list-item__inner {
+				width: 100%;
+				max-width: $max-width;
+				margin: 0 auto;
+				position: relative;
+
+				&::before {
+					content: counter(quote-counter);
+					counter-increment: quote-counter;
+					position: absolute;
+					left: -3rem; 
+					top: 0.5rem;
+					color: $red;
+				}
 			}
+
+			
+
+			&:nth-child(2n) { background-color: $grey; }
 		}
 	}
 }

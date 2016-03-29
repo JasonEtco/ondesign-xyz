@@ -130,3 +130,22 @@ Growth is only possible as a product of history. Without memory, innovation is m
 
 43. ## Power to the people.
 Play can only happen when people feel they have control over their lives. We can’t be free agents if we’re not free.
+
+<script type="text/javascript">
+	var listItems = document.querySelectorAll('#{{ page.title | slugify: 'pretty' }} li');
+
+	function wrapInner(parent, wrapper, attribute, attributevalue) {
+	    if (typeof wrapper === "string") {
+	        wrapper = document.createElement(wrapper);
+	    }
+	    var div = parent.appendChild(wrapper).setAttribute(attribute, attributevalue);
+
+	    while (parent.firstChild !== wrapper) {
+	    	wrapper.appendChild(parent.firstChild);
+	    }
+	}
+
+	[].forEach.call(listItems, function(e) {
+	    wrapInner(e, 'div', 'class', 'list-item__inner');
+	});
+</script>

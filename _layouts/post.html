@@ -5,9 +5,9 @@ layout: default
 
 <article class="post" id="{{ page.title | slugify: 'pretty' }}" itemscope itemtype="http://schema.org/BlogPosting">
 
-	<header class="post__header">
-		<h1 class="post__title scene-element scene-element--fade-in-up" itemprop="name headline">{{ page.title }} &mdash;</h1>
-		<h3 class="post__author scene-element scene-element--fade-in-up">Written by {{ page.author }}</h3>
+	<header class="post__header scene-element scene-element--fade-in-up">
+		<h1 class="post__title" itemprop="name headline">{{ page.title }} &mdash;</h1>
+		<h3 class="post__author">Written by {{ page.author }}</h3>
 	</header>
 
 	<div class="post__content scene-element scene-element--fade-in-up" itemprop="articleBody">
