@@ -3,7 +3,7 @@ layout: post
 title: Incomplete Manifesto for Growth
 author: Bruce Mau
 ---
-1. ## Allow events to change you.
+1. ## Allow <button id="eventsButton">events</button> to change <span id="changeYou">you</span>.
 You have to be willing to grow. Growth is different from something that happens to you. You produce it. You live it. The prerequisites for growth: the openness to experience events and the willingness to be changed by them.
 
 2. ## Forget about good.
@@ -21,8 +21,8 @@ The deeper you go the more likely you will discover something of value.
 6. ## Capture accidents.
 The wrong answer is the right answer in search of a different question. Collect wrong answers as part of the process. Ask different questions.
 
-7. ## Study.
-A studio is a place of study. Use the necessity of production as an excuse to study. Everyone will benefit.
+7. ## <mark>Study.</mark>
+A studio is a place of study. Use the necessity of production as <mark>an excuse to study</mark>. Everyone will benefit.
 
 8. ## Drift.
 Allow yourself to wander aimlessly. Explore adjacencies. Lack judgment. Postpone criticism.
@@ -147,5 +147,14 @@ Play can only happen when people feel they have control over their lives. We can
 
 	[].forEach.call(listItems, function(e) {
 	    wrapInner(e, 'div', 'class', 'list-item__inner');
+	});
+
+
+	// 1 - Allow events to change you.
+	var eventsButton = document.getElementById('eventsButton');
+	var changeYou = document.getElementById('changeYou');
+
+	eventsButton.addEventListener('click', function() {
+		changeYou.classList.add('changed');
 	});
 </script>

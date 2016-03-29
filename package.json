@@ -17,14 +17,12 @@
   "devDependencies": {
     "autoprefixer": "latest",
     "grunt": "latest",
-    "grunt-contrib-imagemin": "latest",
+    "grunt-build-control": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest",
     "grunt-express": "latest",
-    "grunt-newer": "latest",
-    "grunt-postcss": "latest",
-    "time-grunt": "latest",
     "grunt-jekyll": "latest",
-    "imagemin-mozjpeg": "latest"
+    "grunt-postcss": "latest",
+    "time-grunt": "latest"
   }
 }

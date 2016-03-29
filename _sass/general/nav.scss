@@ -9,7 +9,7 @@
 		width: 100%;
 		background-color: $red;
 
-		transition: transform 0.25s ease-in-out;
+		transition: transform 0.2s ease-in-out;
 		&.js--site-header--hidden {
 			transform: translateY(-4rem);
 		}

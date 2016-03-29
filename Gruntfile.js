@@ -1,7 +1,6 @@
 module.exports = function(grunt) {
 
     require('time-grunt')(grunt);
-    var mozjpeg = require('imagemin-mozjpeg');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -98,39 +97,11 @@ module.exports = function(grunt) {
             },
             pages: {
                 options: {
-                    remote: 'https://github.com/JasonEtco/personal-site.git',
+                    remote: 'https://github.com/JasonEtco/type-texts.git',
                     branch: 'gh-pages'
                 }
             }
-        },
-
-
-
-        imagemin: {  
-            tiles: {                          // Target
-                  options: {                       // Target options
-                    optimizationLevel: 3,
-                    svgoPlugins: [{ removeViewBox: false }],
-                    use: [mozjpeg({quality: 85})]
-                  },
-                  files: [{
-                    expand: true,                  // Enable dynamic expansion
-                    cwd: 'assets/tiles',                   // Src matches are relative to this path
-                    src: ['*.{png,jpg,gif}'],   // Actual patterns to match
-                    dest: 'assets/tiles'                  // Destination path prefix
-                  }]
-                },
-
-                                // Task
-            images: {                         // Another target
-              files: [{
-                expand: true,                  // Enable dynamic expansion
-                cwd: 'assets/',                   // Src matches are relative to this path
-                src: ['**/*.{png,jpg,gif}', '!tiles/*.*'],   // Actual patterns to match
-                dest: 'assets/'                  // Destination path prefix
-              }]
-            }
-          }
+        }
 
     });
 
@@ -138,13 +109,12 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-express');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-newer');
     grunt.loadNpmTasks('grunt-jekyll');
+    grunt.loadNpmTasks('grunt-build-control');
 
 
-    grunt.registerTask('default', ['newer:imagemin', 'jekyll:working', 'uglify', 'postcss', 'express', 'watch']);
-    grunt.registerTask('deploy',  ['newer:imagemin', 'jekyll:deploy', 'uglify', 'postcss']);
+    grunt.registerTask('default', ['jekyll:working', 'uglify', 'postcss', 'express', 'watch']);
+    grunt.registerTask('deploy',  ['jekyll:deploy', 'uglify', 'postcss']);
 
     grunt.task.registerTask('post', 'Create new jekyll posts from templates.', function() {
       var name = grunt.option('name'),
