@@ -114,7 +114,7 @@ module.exports = function(grunt) {
 
 
     grunt.registerTask('default', ['jekyll:working', 'uglify', 'postcss', 'express', 'watch']);
-    grunt.registerTask('deploy',  ['jekyll:deploy', 'uglify', 'postcss']);
+    grunt.registerTask('deploy',  ['jekyll:deploy', 'uglify', 'postcss', 'buildcontrol:pages']);
 
     grunt.task.registerTask('post', 'Create new jekyll posts from templates.', function() {
       var name = grunt.option('name'),
