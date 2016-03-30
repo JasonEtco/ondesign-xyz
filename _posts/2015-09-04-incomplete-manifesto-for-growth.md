@@ -66,6 +66,9 @@ Time is genetic. Today is the child of yesterday and the parent of tomorrow. The
 21. ## Repeat yourself.
 If you like it, do it again. If you don’t like it, do it again.
 
+21. ## Repeat yourself.
+If you like it, do it again. If you don’t like it, do it again.
+
 22. ## Make your own tools.
 Hybridize your tools in order to build unique things. Even simple tools that are your own can yield entirely new avenues of exploration. Remember, tools amplify our capacities, so even a small tool can make a big difference.
 
@@ -128,10 +131,11 @@ People visiting the studio often comment on how much we laugh. Since I’ve beco
 42. ## Remember.
 Growth is only possible as a product of history. Without memory, innovation is merely novelty. History gives growth a direction. But a memory is never perfect. Every memory is a degraded or composite image of a previous moment or event. That’s what makes us aware of its quality as a past and not a present. It means that every memory is new, a partial construct different from its source, and, as such, a potential for growth itself.
 
-43. ## Power to the people.
+43. ## <a href="#">Power to the people</a>.
 Play can only happen when people feel they have control over their lives. We can’t be free agents if we’re not free.
 
 <script type="text/javascript">
+	// Wrap list items in div.list-item__inner
 	var listItems = document.querySelectorAll('#{{ page.title | slugify: 'pretty' }} li');
 
 	function wrapInner(parent, wrapper, attribute, attributevalue) {
@@ -150,11 +154,21 @@ Play can only happen when people feel they have control over their lives. We can
 	});
 
 
-	// 1 - Allow events to change you.
+	//////
+
+
+	// 1. Allow events to change you.
 	var eventsButton = document.getElementById('eventsButton');
 	var changeYou = document.getElementById('changeYou');
 
 	eventsButton.addEventListener('click', function() {
 		changeYou.classList.add('changed');
 	});
+
+	// 21. Repeat yourself.
+	// var repeatTitle = document.getElementById('repeat-yourself');
+	// var repeatParagraph = repeatTitle.nextElementSibling;
+
+	// repeatTitle.parentElement.appendChild(repeatTitle.cloneNode(true));
+	// repeatParagraph.parentElement.appendChild(repeatParagraph.cloneNode(true));
 </script>
