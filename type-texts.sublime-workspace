@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"backgrou",
+				"background-repeat"
+			],
+			[
 				"if",
 				"ife	if … else"
 			],
@@ -31,39 +35,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "_sass/posts/articles/incomplete-manifesto-for-growth.scss",
-			"settings":
-			{
-				"buffer_size": 935,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "CNAME",
-			"settings":
-			{
-				"buffer_size": 13,
-				"line_ending": "Windows",
-				"name": "tt.jasonet.co"
-			}
-		},
-		{
-			"file": "_posts/2015-09-04-incomplete-manifesto-for-growth.md",
-			"settings":
-			{
-				"buffer_size": 9003,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "package.json",
-			"settings":
-			{
-				"buffer_size": 804,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -119,29 +90,31 @@
 	},
 	"expanded_folders":
 	[
-		"/D/Desktop/Design/type-texts/_sass/posts/articles",
+		"/D/Desktop/Design/type-texts/_sass",
 		"/D/Desktop/Design/type-texts",
-		"/D/Desktop/Design/type-texts/_site/articles"
+		"/D/Desktop/Design/type-texts/_includes"
 	],
 	"file_history":
 	[
-		"/D/Desktop/Design/type-texts/_sass/general/nav.scss",
-		"/D/Desktop/Design/type-texts/Gruntfile.js",
-		"/D/Desktop/Design/type-texts/_includes/scripts.html",
 		"/D/Desktop/Design/type-texts/_includes/head.html",
-		"/D/Desktop/Design/type-texts/index.html",
-		"/D/Desktop/Design/type-texts/_sass/homepage.scss",
-		"/D/Desktop/Design/type-texts/_sass/posts/posts.scss",
 		"/D/Desktop/Design/type-texts/_sass/posts/articles/incomplete-manifesto-for-growth.scss",
-		"/D/Desktop/Design/type-texts/_posts/2015-09-04-incomplete-manifesto-for-growth.md",
+		"/D/Desktop/Design/type-texts/_sass/general/nav.scss",
+		"/D/Desktop/Design/type-texts/_sass/general/layout.scss",
 		"/D/Desktop/Design/type-texts/_sass/tools/variables.scss",
+		"/D/Desktop/Design/type-texts/_sass/posts/posts.scss",
+		"/D/Desktop/Design/type-texts/Gruntfile.js",
+		"/D/Desktop/Design/type-texts/_js/scripts.js",
+		"/D/Desktop/Design/type-texts/_posts/2015-09-04-incomplete-manifesto-for-growth.md",
+		"/D/Desktop/Design/type-texts/index.html",
+		"/D/Desktop/Design/type-texts/package.json",
+		"/D/Desktop/Design/type-texts/CNAME",
+		"/D/Desktop/Design/type-texts/_includes/scripts.html",
+		"/D/Desktop/Design/type-texts/_sass/homepage.scss",
 		"/D/Desktop/Design/type-texts/_site/articles/incomplete-manifesto-for-growth/index.html",
 		"/D/Desktop/Design/type-texts/_site/main.js",
 		"/D/Desktop/Design/type-texts/_layouts/post.html",
 		"/D/Desktop/Design/type-texts/_includes/header.html",
-		"/D/Desktop/Design/type-texts/_js/scripts.js",
 		"/D/Desktop/Design/type-texts/_posts/2015-09-04-i-hate-itc-garamond.md",
-		"/D/Desktop/Design/type-texts/_sass/general/layout.scss",
 		"/D/Desktop/Design/type-texts/_sass/general/animations.scss",
 		"/D/Desktop/Design/type-texts/_config.yml",
 		"/D/Desktop/Design/type-texts/css/styles.scss",
@@ -149,7 +122,6 @@
 		"/D/Desktop/Design/type-texts/_layouts/default.html",
 		"/D/Desktop/Design/type-texts/_includes/icon-github.svg",
 		"/D/Desktop/Design/type-texts/_includes/icon-jasonetco.svg",
-		"/D/Desktop/Design/type-texts/package.json",
 		"/D/Desktop/Design/icons/_includes/icon-github.html",
 		"/D/Desktop/Design/type-texts/_posts/2015-09-04-improving-the-digital-reading-experience.md",
 		"/D/Desktop/Design/type-texts/type-texts.sublime-project",
@@ -252,6 +224,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".ico",
+			"ico",
+			"buddySystem",
+			"50",
+			"\n",
 			"2",
 			"eventsButton",
 			"myNode",
@@ -369,217 +346,8 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "_sass/posts/articles/incomplete-manifesto-for-growth.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 935,
-						"regions":
-						{
-							"gutter_color_1008":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										741,
-										741
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_582":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/yellow.png",
-								"regions":
-								[
-									[
-										741,
-										741
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_590":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/yellow.png",
-								"regions":
-								[
-									[
-										741,
-										741
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_594":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/yellow.png",
-								"regions":
-								[
-									[
-										741,
-										741
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_604":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/yellow.png",
-								"regions":
-								[
-									[
-										741,
-										741
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_656":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/yellow.png",
-								"regions":
-								[
-									[
-										741,
-										741
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_685":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/#333.png",
-								"regions":
-								[
-									[
-										741,
-										741
-									]
-								],
-								"scope": "gutter_color"
-							}
-						},
-						"selection":
-						[
-							[
-								618,
-								618
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 285.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "CNAME",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 13,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								13,
-								13
-							]
-						],
-						"settings":
-						{
-							"auto_name": "tt.jasonet.co",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "_posts/2015-09-04-incomplete-manifesto-for-growth.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9003,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8993,
-								8993
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2547.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "package.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 804,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								804,
-								804
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Seti_UI/icons/Langs/npm JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
