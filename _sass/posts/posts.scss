@@ -1,9 +1,9 @@
 @import "articles/incomplete-manifesto-for-growth";
 
 .post {
-	padding: 7rem 0;
+	padding: 7em 0;
 
-	font-size: 1.2em;
+	font-size: 1.2rem;
 	color: $darkgrey;
 
 	&__header {
@@ -17,7 +17,7 @@
 
 	&__author {
 		font-family: $accent-stack;
-		font-size: 11px;
+		font-size: 0.7rem;
 		letter-spacing: 1px;
 		text-transform: uppercase;
 		margin: 0;
@@ -34,7 +34,7 @@
 		}
 
 		blockquote {
-			font-size: 1.2em;
+			font-size: 1.4rem;
 			padding: 0 0 0 2em;
 			margin: 1.2em 0;
 		}
