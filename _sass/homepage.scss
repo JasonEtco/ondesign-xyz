@@ -36,11 +36,10 @@
 	&__author {
 		font-family: $accent-stack;
 		font-weight: 300;
-		font-size: 11px;
 		letter-spacing: 1px;
 		text-transform: uppercase;
-		margin: 0;
 		display: inline-block;
+		@include baseline(-1);
 	}
 
 	&__credits {
@@ -56,7 +55,7 @@
 		}
 
 		p {
-			margin: 0.6em 0;
+			@include baseline(0);
 			
 			a {
 				color: inherit;
@@ -85,7 +84,6 @@
 		width: 1.5rem;
 		height: 1.5rem;
 		display: inline-block;
-		margin-top: 2rem;
 
 		&:hover svg { fill: darken($almost-white, 20%); }
 

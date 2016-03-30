@@ -1,53 +1,35 @@
 @import "articles/incomplete-manifesto-for-growth";
 
 .post {
-	padding: 7em 0;
-
-	font-size: 1.2rem;
+	padding-top: $base-line-height * 4;
 	color: $darkgrey;
 
 	&__header {
 		max-width: $max-width;
-		margin: 0 auto;
+		margin: 0 auto $base-line-height * 2 auto;
 	}
 
 	&__title {
-		margin: 0;
+		margin-bottom: 0;
 	}
 
 	&__author {
 		font-family: $accent-stack;
-		font-size: 0.7rem;
 		letter-spacing: 1px;
 		text-transform: uppercase;
-		margin: 0;
 		display: inline-block;
 		color: $red;
+		@include baseline(-1);
 	}
 
 	&__content {
 		max-width: $max-width;
 		margin: 0 auto;
 
-		p {
-			line-height: 2;
-		}
-
 		blockquote {
-			font-size: 1.4rem;
-			padding: 0 0 0 2em;
-			margin: 1.2em 0;
-		}
-
-		h2 + p, h3 + p {
-			margin-top: 0;
-		}
-
-		h2 {
-			margin: 2em 0 1em 0;
-
-			& + h3 {
-				margin: 0 0 1em 0;
+			margin: 0;
+			p {
+				@include baseline(1);
 			}
 		}
 	}

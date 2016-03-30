@@ -10,8 +10,19 @@ html { font-size: 100%; }
 body {
 	background: $almost-white;
 	font-family: $body-stack;
+	// @include baseline-grid;
 }
 
 h1, h2, h3 {
 	font-family: $title-stack;
+	margin: 0;
+}
+
+h1 {@include baseline(3); margin: 1 * $base-line-height 0;}
+h2 {@include baseline(2);}
+h3 {@include baseline(1);}
+
+p {
+	@include baseline(0);
+	margin: 0 0 $base-line-height 0;
 }

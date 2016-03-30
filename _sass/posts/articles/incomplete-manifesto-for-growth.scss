@@ -5,7 +5,6 @@
 	}
 
 	h2 {
-		margin: 0 0 0.1em 0;
 		display: inline-block;
 		position: relative;
 	}
@@ -17,7 +16,7 @@
 
 		li {
 			width: 100%;
-			margin: 8em 0;
+			margin: $base-line-height * 4 0;
 
 			.list-item__inner {
 				width: 100%;
@@ -29,9 +28,10 @@
 					content: counter(quote-counter);
 					counter-increment: quote-counter;
 					position: absolute;
-					left: -3rem; 
-					top: 0.5rem;
+					left: -3rem;
+					top: -0.2rem;
 					color: $red;
+					@include baseline(2);
 				}
 			}
 			&:nth-child(22) {
@@ -41,21 +41,28 @@
 	}
 
 	// 1. Allow events to change you.
-	li:nth-child(1) #changeYou {
-		transition: color 0.5s ease-in-out;
-		&.changed { color: $red; }
+	li:nth-child(1) {
+		button {
+			margin: 0;
+			border: none;
+			padding: 0 1rem;
+		}
+
+		#changeYou {
+			transition: color 0.5s ease-in-out;
+			&.changed { color: $red; }
+		}
 	}
 
 	// 3. Process is more important than outcome.
 	li:nth-child(3) .list-item__inner::after {
 		content: '';
-		background: linear-gradient(to bottom, rgba($red, 0) 95%,rgba($red, 1) 100%);
-		background-size: 100% 2.4rem;
+		@include baseline-grid;
 
 		width: 100%;
 		height: calc(100% + 1rem);
 		position: absolute;
-		top: -0.8rem;
+		top: 0;
 		left: 0;
 		z-index: -1;
 	}

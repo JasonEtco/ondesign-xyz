@@ -23,3 +23,56 @@ $on-laptop:        1500px;
 	    @content;
 	}
 }
+
+
+
+
+
+// Baseline Alignment
+
+$base-font-size: 1rem;
+$base-line-height: 2 * $base-font-size;
+$type-settings: (
+  -1: (
+    font-size: 0.7rem,
+    line-height: $base-line-height
+  ),
+  0: (
+    font-size: 1.2rem,
+    line-height: $base-line-height
+  ),
+  1: (
+    font-size: 1.4rem,
+    line-height: $base-line-height * 2
+  ),
+  2: (
+    font-size: 1.8rem,
+    line-height: $base-line-height * 2
+  ),
+  3: (
+    font-size: 2rem,
+    line-height: $base-line-height * 2
+  )
+);
+
+@function type-scale($level) {
+  @return map-get(
+    map-get($type-settings, $level), 'font-size');
+}
+
+@function line-height($level) {
+  @return map-get(
+    map-get($type-settings, $level), 'line-height');
+}
+
+@mixin baseline($level) {
+  font-size: type-scale($level);
+  line-height: line-height($level);
+}
+
+// Show baseline grid
+@mixin baseline-grid {
+	background-image: linear-gradient(0deg, transparent 0px, transparent 0px),
+					  linear-gradient(to bottom, transparent 95%, rgba(56,255,255,0.8) 100%);
+	background-size: 100%, 100% $base-line-height;
+}
