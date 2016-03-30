@@ -138,6 +138,10 @@
     <p>If you like it, do it again. If you don’t like it, do it again.</p>
   </li>
   <li>
+    <h2 id="repeat-yourself-1">Repeat yourself.</h2>
+    <p>If you like it, do it again. If you don’t like it, do it again.</p>
+  </li>
+  <li>
     <h2 id="make-your-own-tools">Make your own tools.</h2>
     <p>Hybridize your tools in order to build unique things. Even simple tools that are your own can yield entirely new avenues of exploration. Remember, tools amplify our capacities, so even a small tool can make a big difference.</p>
   </li>
@@ -221,12 +225,13 @@
     <p>Growth is only possible as a product of history. Without memory, innovation is merely novelty. History gives growth a direction. But a memory is never perfect. Every memory is a degraded or composite image of a previous moment or event. That’s what makes us aware of its quality as a past and not a present. It means that every memory is new, a partial construct different from its source, and, as such, a potential for growth itself.</p>
   </li>
   <li>
-    <h2 id="power-to-the-people">Power to the people.</h2>
+    <h2 id="a-hrefpower-to-the-peoplea"><a href="#">Power to the people</a>.</h2>
     <p>Play can only happen when people feel they have control over their lives. We can’t be free agents if we’re not free.</p>
   </li>
 </ol>
 
 <script type="text/javascript">
+	// Wrap list items in div.list-item__inner
 	var listItems = document.querySelectorAll('#incomplete-manifesto-for-growth li');
 
 	function wrapInner(parent, wrapper, attribute, attributevalue) {
@@ -245,13 +250,23 @@
 	});
 
 
-	// 1 - Allow events to change you.
+	//////
+
+
+	// 1. Allow events to change you.
 	var eventsButton = document.getElementById('eventsButton');
 	var changeYou = document.getElementById('changeYou');
 
 	eventsButton.addEventListener('click', function() {
 		changeYou.classList.add('changed');
 	});
+
+	// 21. Repeat yourself.
+	// var repeatTitle = document.getElementById('repeat-yourself');
+	// var repeatParagraph = repeatTitle.nextElementSibling;
+
+	// repeatTitle.parentElement.appendChild(repeatTitle.cloneNode(true));
+	// repeatParagraph.parentElement.appendChild(repeatParagraph.cloneNode(true));
 </script>
 
 

@@ -5,8 +5,8 @@
     <description>Intelligent writings by brilliant people.</description>
     <link>http://jasonet.co/</link>
     <atom:link href="http://jasonet.co/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Mar 2016 20:36:14 -0400</pubDate>
-    <lastBuildDate>Tue, 29 Mar 2016 20:36:14 -0400</lastBuildDate>
+    <pubDate>Tue, 29 Mar 2016 21:33:48 -0400</pubDate>
+    <lastBuildDate>Tue, 29 Mar 2016 21:33:48 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -97,6 +97,10 @@
     &lt;p&gt;If you like it, do it again. If you don’t like it, do it again.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
+    &lt;h2 id=&quot;repeat-yourself-1&quot;&gt;Repeat yourself.&lt;/h2&gt;
+    &lt;p&gt;If you like it, do it again. If you don’t like it, do it again.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
     &lt;h2 id=&quot;make-your-own-tools&quot;&gt;Make your own tools.&lt;/h2&gt;
     &lt;p&gt;Hybridize your tools in order to build unique things. Even simple tools that are your own can yield entirely new avenues of exploration. Remember, tools amplify our capacities, so even a small tool can make a big difference.&lt;/p&gt;
   &lt;/li&gt;
@@ -180,12 +184,13 @@
     &lt;p&gt;Growth is only possible as a product of history. Without memory, innovation is merely novelty. History gives growth a direction. But a memory is never perfect. Every memory is a degraded or composite image of a previous moment or event. That’s what makes us aware of its quality as a past and not a present. It means that every memory is new, a partial construct different from its source, and, as such, a potential for growth itself.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;h2 id=&quot;power-to-the-people&quot;&gt;Power to the people.&lt;/h2&gt;
+    &lt;h2 id=&quot;a-hrefpower-to-the-peoplea&quot;&gt;&lt;a href=&quot;#&quot;&gt;Power to the people&lt;/a&gt;.&lt;/h2&gt;
     &lt;p&gt;Play can only happen when people feel they have control over their lives. We can’t be free agents if we’re not free.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;script type=&quot;text/javascript&quot;&gt;
+	// Wrap list items in div.list-item__inner
 	var listItems = document.querySelectorAll(&#39;#incomplete-manifesto-for-growth li&#39;);
 
 	function wrapInner(parent, wrapper, attribute, attributevalue) {
@@ -204,13 +209,23 @@
 	});
 
 
-	// 1 - Allow events to change you.
+	//////
+
+
+	// 1. Allow events to change you.
 	var eventsButton = document.getElementById(&#39;eventsButton&#39;);
 	var changeYou = document.getElementById(&#39;changeYou&#39;);
 
 	eventsButton.addEventListener(&#39;click&#39;, function() {
 		changeYou.classList.add(&#39;changed&#39;);
 	});
+
+	// 21. Repeat yourself.
+	// var repeatTitle = document.getElementById(&#39;repeat-yourself&#39;);
+	// var repeatParagraph = repeatTitle.nextElementSibling;
+
+	// repeatTitle.parentElement.appendChild(repeatTitle.cloneNode(true));
+	// repeatParagraph.parentElement.appendChild(repeatParagraph.cloneNode(true));
 &lt;/script&gt;
 
 </description>
