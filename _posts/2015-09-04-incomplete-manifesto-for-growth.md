@@ -165,10 +165,4 @@ Play can only happen when people feel they have control over their lives. We can
 		changeYou.classList.add('changed');
 	});
 
-	// 21. Repeat yourself.
-	// var repeatTitle = document.getElementById('repeat-yourself');
-	// var repeatParagraph = repeatTitle.nextElementSibling;
-
-	// repeatTitle.parentElement.appendChild(repeatTitle.cloneNode(true));
-	// repeatParagraph.parentElement.appendChild(repeatParagraph.cloneNode(true));
 </script>
