@@ -5,8 +5,8 @@
     <description>Intelligent writings by brilliant people.</description>
     <link>http://jasonet.co/</link>
     <atom:link href="http://jasonet.co/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 29 Mar 2016 21:33:48 -0400</pubDate>
-    <lastBuildDate>Tue, 29 Mar 2016 21:33:48 -0400</lastBuildDate>
+    <pubDate>Tue, 29 Mar 2016 21:54:19 -0400</pubDate>
+    <lastBuildDate>Tue, 29 Mar 2016 21:54:19 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -220,12 +220,6 @@
 		changeYou.classList.add(&#39;changed&#39;);
 	});
 
-	// 21. Repeat yourself.
-	// var repeatTitle = document.getElementById(&#39;repeat-yourself&#39;);
-	// var repeatParagraph = repeatTitle.nextElementSibling;
-
-	// repeatTitle.parentElement.appendChild(repeatTitle.cloneNode(true));
-	// repeatParagraph.parentElement.appendChild(repeatParagraph.cloneNode(true));
 &lt;/script&gt;
 
 </description>
