@@ -14,15 +14,17 @@
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-	<link href='https://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
 
 	<script>
-	    (function(j,a,s,o,n,e,t){j['GoogleAnalyticsObject']=n;j[n]=j[n]||function(){
-	      (j[n].q=j[n].q||[]).push(arguments)},j[n].l=1*new Date();e=a.createElement(s),
-	      t=a.getElementsByTagName(s)[0];e.async=1;e.src=o;t.parentNode.insertBefore(e,t)
-	      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		if(location.hostname != "localhost") {
+		    (function(j,a,s,o,n,e,t){j['GoogleAnalyticsObject']=n;j[n]=j[n]||function(){
+		      (j[n].q=j[n].q||[]).push(arguments)},j[n].l=1*new Date();e=a.createElement(s),
+		      t=a.getElementsByTagName(s)[0];e.async=1;e.src=o;t.parentNode.insertBefore(e,t)
+		      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	      ga('create', 'UA-75781535-1', 'auto');
-	      ga('send', 'pageview');
+		      ga('create', 'UA-75781535-1', 'auto');
+		      ga('send', 'pageview');
+		  }
 	</script>
 </head>

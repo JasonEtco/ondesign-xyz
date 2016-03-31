@@ -10,7 +10,7 @@ html { font-size: 100%; }
 body {
 	background: $almost-white;
 	font-family: $body-stack;
-	// @include baseline-grid;
+	@include baseline-grid;
 }
 
 h1, h2, h3 {

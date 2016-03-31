@@ -13,8 +13,9 @@
 		margin-bottom: 0;
 	}
 
-	&__author {
+	&__author, &__copyright {
 		font-family: $accent-stack;
+		font-weight: 500;
 		letter-spacing: 1px;
 		text-transform: uppercase;
 		display: inline-block;

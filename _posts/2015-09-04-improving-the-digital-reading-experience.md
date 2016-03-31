@@ -2,6 +2,7 @@
 layout: post
 title: Improving the Digital Reading Experience
 author: Information Architects
+copyright: Originally posted <a href="https://ia.net/know-how/improving-the-digital-reading-experience" target="_blank">here</a>.
 ---
 There is a difference between checking Google Maps on your iPhone and asking a stranger for directions. It matters whether you listened to Beethoven’s 9th in a concert hall or in your living room, whether it plays from a vinyl LP or from your iPod. King Lear is not the same experience when seen at the theatre, studied on paper, or scanned on a Kindle.
 

@@ -2,6 +2,7 @@
 layout: post
 title: Incomplete Manifesto for Growth
 author: Bruce Mau
+copyright: Originally posted <a href="http://www.manifestoproject.it/bruce-mau/" target="_blank">here</a>.
 ---
 1. ## Allow <button id="eventsButton">events</button> to change <span id="changeYou">you</span>.
 You have to be willing to grow. Growth is different from something that happens to you. You produce it. You live it. The prerequisites for growth: the openness to experience events and the willingness to be changed by them.
@@ -18,7 +19,7 @@ Joy is the engine of growth. Exploit the liberty in casting your work as beautif
 5. ## Go deep.
 The deeper you go the more likely you will discover something of value.
 
-6. ## Capture accidents.
+6. ## <h1>Capture accidents.</h1>
 The wrong answer is the right answer in search of a different question. Collect wrong answers as part of the process. Ask different questions.
 
 7. ## <mark>Study.</mark>
@@ -112,7 +113,7 @@ This isn’t my idea — I borrowed it. I think it belongs to Andy Grove.
 Don’t be shy about it. Try to get as close as you can. You’ll never get all the way, and the separation might be truly remarkable. We have only to look to Richard Hamilton and his version of Marcel Duchamp’s large glass to see how rich, discredited, and underused imitation is as a technique.
 
 36. ## Scat.
-When you forget the words, do what Ella did: make up something else ... but not words.
+When you forget the words, do what Ella did: make up something else... but not words.
 
 37. ## Break it, stretch it, bend it, crush it, crack it, fold it.
 

@@ -7,7 +7,7 @@ layout: default
 
 	<header class="post__header scene-element scene-element--fade-in-up">
 		<h1 class="post__title" itemprop="name headline">{{ page.title }} &mdash;</h1>
-		<h3 class="post__author">Written by {{ page.author }}</h3>
+		<h3 class="post__author">Written by {{ page.author }}{% if page.copyright %} &mdash; {{ page.copyright }}{% endif %}</h3>
 	</header>
 
 	<div class="post__content scene-element scene-element--fade-in-up" itemprop="articleBody">

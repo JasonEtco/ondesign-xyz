@@ -16,7 +16,8 @@
 
 		li {
 			width: 100%;
-			margin: $base-line-height * 4 0;
+			margin: $base-line-height * 3 0;
+			padding: $base-line-height 0;
 
 			.list-item__inner {
 				width: 100%;
@@ -33,9 +34,6 @@
 					color: $red;
 					@include baseline(2);
 				}
-			}
-			&:nth-child(22) {
-				counter-reset: quote-counter 20;
 			}
 		}
 	}
@@ -92,6 +90,33 @@
 	// 13. Slow down.
 	li:nth-child(13) h2 {
 		animation: keep-moving 5s infinite ease-in-out;
+	}
+
+	li:nth-child(22) {
+		counter-increment: quote-counter -1;
+	} // Following the "clone" increment, increase nth-child by 1
+
+	// 27. Read only left-hand pages.
+	li:nth-child(28) {
+		p {
+			padding: 1 * $base-line-height;
+			column-count: 2;
+			column-gap: 9em;
+			background: linear-gradient(to right, transparent 50%, $darkgrey 50%);
+		}
+		&:hover {
+			background: none;
+		}		
+	}
+
+	// 39. Coffee breaks, cab rides, green rooms.
+	li:nth-child(40) {
+		background-color: limegreen;
+		color: $almost-white;
+
+		.list-item__inner::before {
+			color: $almost-white;
+		}
 	}
 
 	// 43. Power to the people.
