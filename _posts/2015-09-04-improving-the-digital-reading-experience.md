@@ -14,7 +14,11 @@ Whether you read text on paper, a cathode ray tube monitor, an LCD screen, or e-
 
 To optimize the reading experience, no matter whether in print or on the screen, we need to understand the humane function of a computer, and examine the differences between digital and analog reading experiences. Then we can think about ways to improve the experience to get better results for the reader.
 
-I will try to sketch out how to do this in the following 14 minutes of text.
+I will try to sketch out how to do this in the following **14 minutes** of text.
+
+<div id="js--beginTimer-wrapper">
+	<button id="js--beginTimer">BEGIN</button>
+</div>
 
 ## 1. The humane function of computers
 
@@ -142,3 +146,36 @@ The downside with traditional fonts is that they are not always optimized for di
 The computer is an extension of our mind. To design better software we need to build interfaces as extensions of our mental processes, rather than analogies of our body. Building better reading interfaces requires that we closely observe and rethink the way we read. While we need to find ways to navigate long texts on tablets, typography will continue to play the main role in the performance of a reading interface.
 
 The technical challenges, information architecture, interaction design, and digital typography are complex and tough. But if our goal is to build digital reading interfaces that improve the efficiency of our reading experience as much as the bicycle improved the efficiency of our legs, we have to not just optimize screen typography and type design, but rethink reading and writing from inside out.
+
+<script>
+	function startTimer(duration, display) {
+	    var timer = duration, minutes, seconds;
+	    setInterval(function () {
+	        minutes = parseInt(timer / 60, 10)
+	        seconds = parseInt(timer % 60, 10);
+
+	        minutes = minutes < 10 ? "0" + minutes : minutes;
+	        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+	        display.textContent = minutes + ":" + seconds;
+
+	        if (--timer < 0) {
+	            timer = duration;
+	        }
+	    }, 1000);
+	}
+
+	var beginButton = document.getElementById('js--beginTimer');
+	beginButton.addEventListener('click', function () {
+	    var numMinutes = 60 * 14,
+	        display = document.querySelector('#js--time');
+	    startTimer(numMinutes, display);
+
+	    var elems = document.querySelectorAll("#js--beginTimer-wrapper ~ *:not(script)");
+	    [].forEach.call(elems, function(e) {
+            e.style.display = 'block';
+        });
+
+	    beginButton.style.display = 'none';
+	});
+</script>

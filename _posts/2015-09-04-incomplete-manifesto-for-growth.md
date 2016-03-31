@@ -163,7 +163,7 @@ Play can only happen when people feel they have control over their lives. We can
 	var changeYou = document.getElementById('changeYou');
 
 	eventsButton.addEventListener('click', function() {
-		changeYou.classList.add('changed');
+		changeYou.classList.toggle('changed');
 	});
 
 </script>

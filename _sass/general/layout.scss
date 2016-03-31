@@ -10,7 +10,25 @@ html { font-size: 100%; }
 body {
 	background: $almost-white;
 	font-family: $body-stack;
-	@include baseline-grid;
+
+	&.grid {
+		@include baseline-grid;
+	}
+}
+
+#js--gridButton {
+	position: fixed;
+	top: 1rem;
+	left: 1rem;
+	@include baseline(-1);
+	font-family: $accent-stack;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: $red;
+	background-color: $almost-white;
+	border: 2px solid $red;
+	padding: 0 1em;
+	z-index: 100;
 }
 
 h1, h2, h3 {

@@ -22,5 +22,12 @@ start = function() {
 
 	objs = document.querySelectorAll('.post__content p');
 	orphanCrippler(objs);
+
+
+	// Show grid background
+	var gridButton = document.getElementById('js--gridButton');
+	gridButton.addEventListener('click', function() {
+		document.body.classList.toggle('grid');
+	});
 	
 }

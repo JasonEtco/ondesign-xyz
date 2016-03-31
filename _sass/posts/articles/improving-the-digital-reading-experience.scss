@@ -1,0 +1,25 @@
+#js--time {
+	position: fixed;
+	top: 4rem;
+	left: 1rem;
+	@include baseline(1);
+	font-family: $accent-stack;
+}
+
+#improving-the-digital-reading-experience .post__content {
+
+	#js--beginTimer-wrapper ~ * {
+		display: none;
+	}
+
+	#js--beginTimer {
+		@include baseline(1);
+		font-family: $title-stack;
+		width: 100%;
+		padding: 0;
+		border: none;
+		color: white;
+		background-color: $red;
+	}
+
+}

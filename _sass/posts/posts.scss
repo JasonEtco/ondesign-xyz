@@ -1,7 +1,10 @@
 @import "articles/incomplete-manifesto-for-growth";
+@import "articles/i-hate-itc-garamond";
+@import "articles/improving-the-digital-reading-experience";
 
 .post {
 	padding-top: $base-line-height * 4;
+	padding-bottom: $base-line-height * 3;
 	color: $darkgrey;
 
 	&__header {
