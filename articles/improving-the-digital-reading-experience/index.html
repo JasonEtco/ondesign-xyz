@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Type-Texts / Improving the Digital Reading Experience</title>
-	<meta name="description" content="There is a difference between checking Google Maps on your iPhone and asking a stranger for directions. It matters whether you listened to Beethoven’s 9th in...">
+	<meta name="description" content="I'm sorry, but you weren't able to complete this article in time. Refresh to try again.">
 	<meta name="keywords" content="graphic design, web design, front-end development, jason etcovitch, toronto">
 
 	<link rel="stylesheet" href="/css/styles.css">
@@ -17,22 +17,25 @@
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-	<link href='https://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
 
 	<script>
-	    (function(j,a,s,o,n,e,t){j['GoogleAnalyticsObject']=n;j[n]=j[n]||function(){
-	      (j[n].q=j[n].q||[]).push(arguments)},j[n].l=1*new Date();e=a.createElement(s),
-	      t=a.getElementsByTagName(s)[0];e.async=1;e.src=o;t.parentNode.insertBefore(e,t)
-	      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		if(location.hostname != "localhost") {
+		    (function(j,a,s,o,n,e,t){j['GoogleAnalyticsObject']=n;j[n]=j[n]||function(){
+		      (j[n].q=j[n].q||[]).push(arguments)},j[n].l=1*new Date();e=a.createElement(s),
+		      t=a.getElementsByTagName(s)[0];e.async=1;e.src=o;t.parentNode.insertBefore(e,t)
+		      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	      ga('create', 'UA-75781535-1', 'auto');
-	      ga('send', 'pageview');
+		      ga('create', 'UA-75781535-1', 'auto');
+		      ga('send', 'pageview');
+		  }
 	</script>
 </head>
 
 
     <body>
 	    <main rel="main" class="content-wrapper" id="main">
+	    	<button id="js--gridButton">Toggle Grid</button>
 
 	        <header class="site-header scene-element scene-element--fade-in-down" id="site-header">
 	<div class="nav__wrapper">
@@ -48,21 +51,29 @@
 
 	<header class="post__header scene-element scene-element--fade-in-up">
 		<h1 class="post__title" itemprop="name headline">Improving the Digital Reading Experience &mdash;</h1>
-		<h3 class="post__author">Written by Information Architects</h3>
+		<h3 class="post__author">Written by Information Architects &mdash; Originally posted <a href="https://ia.net/know-how/improving-the-digital-reading-experience" target="_blank">here</a>.</h3>
 	</header>
+	
+	<div id="js--time"></div>
 
 	<div class="post__content scene-element scene-element--fade-in-up" itemprop="articleBody">
-		<p>There is a difference between checking Google Maps on your iPhone and asking a stranger for directions. It matters whether you listened to Beethoven’s 9th in a concert hall or in your living room, whether it plays from a vinyl LP or from your iPod. King Lear is not the same experience when seen at the theatre, studied on paper, or scanned on a Kindle.</p>
+		<h2 class="too-late">I'm sorry, but you weren't able to complete this article in time. <a class="too-late__refresh" href="javascript:location.reload()">Refresh to try again.</a></h2>
+
+<p>There is a difference between checking Google Maps on your iPhone and asking a stranger for directions. It matters whether you listened to Beethoven’s 9th in a concert hall or in your living room, whether it plays from a vinyl LP or from your iPod. King Lear is not the same experience when seen at the theatre, studied on paper, or scanned on a Kindle.</p>
 
 <p>It is not always easy to discern digital and analog experiences. A lot of seemingly analog devices have digital technology built in without us realizing it (tape decks, ovens, cars), and, as you might have noticed, more and more digital devices try to look and feel like analog tools.</p>
 
 <p>The technology below the surface—whether it is manual, mechanical, automatic or digital—is not what matters. Not the schematic of a device, but what we think, do, and feel when using it. Whether we call something “digital” or “analog” depends more on the way we perceive, understand, and use a device than the ghost in its shell.</p>
 
-<p>Whether you read text on paper, a cathode ray tube monitor, an LCD screen, or e-ink, whether you read in indirect or direct light, high or low resolution, and whether the text is at arm’s length or not is one side of the equation. The other side is defined by you as the reader: Where are you, what are your motivations, and what are your goals?</p>
+<p>Whether you read text on paper, a cathode ray tube monitor, an LCD screen, or e‑ink, whether you read in indirect or direct light, high or low resolution, and whether the text is at arm’s length or not is one side of the equation. The other side is defined by you as the reader: Where are you, what are your motivations, and what are your goals?</p>
 
 <p>To optimize the reading experience, no matter whether in print or on the screen, we need to understand the humane function of a computer, and examine the differences between digital and analog reading experiences. Then we can think about ways to improve the experience to get better results for the reader.</p>
 
-<p>I will try to sketch out how to do this in the following 14 minutes of text.</p>
+<p>I will try to sketch out how to do this in the following <strong>14 minutes</strong> of text.</p>
+
+<div id="js--beginTimer-wrapper">
+	<a href="#the-humane-function-of-computers" id="js--beginTimer">BEGIN</a>
+</div>
 
 <h2 id="the-humane-function-of-computers">1. The humane function of computers</h2>
 
@@ -89,39 +100,44 @@
 <h3 id="reading-in-a-browser">2.1 Reading in a browser</h3>
 <p>Similar to the nervous landscape of Super Mario Bros., contemporary computers have different levels that change rapidly and require fast reflexes to cope. If you are reading online, you descend multiple levels to reach the text. For example:</p>
 
-<p>You sit down in front of a computer, becoming unaware of your body and your surroundings
-You switch the computer on and start loosing track of time
-You focus on the screen, framing your perception within a relatively small visual square that replaces your general perception
-You enter the logic of the operating system, and your body/mind coordination reduces to your hand and eyes
-You enter the browser and let go of the operating system’s environment
-You let go of the browser and focus on the functional structure of a website
-You let go of the information architecture of the website and start reading
-You then jump around between levels 4 and 7 until you stop reading in the browser
-If you compare the overall information architecture of a website to a book, you will notice that the difficulty in reading a digital text is not just a matter of all the synchronous processes, or the typographic design of digital text. Think about the number of frames of reference that you need to enter, the number of levels that you need to climb down—and the mindset that this climbing requires—until you reach a digital text. How much more complexity do you need once you reach the ultimate text layer? Why is it that once we reach the text, we hardly stay there for more than a couple of minutes?</p>
+<ul>
+  <li>You sit down in front of a computer, becoming unaware of your body and your surroundings</li>
+  <li>You switch the computer on and start loosing track of time</li>
+  <li>You focus on the screen, framing your perception within a relatively small visual square that replaces your general perception</li>
+  <li>You enter the logic of the operating system, and your body/mind coordination reduces to your hand and eyes</li>
+  <li>You enter the browser and let go of the operating system’s environment</li>
+  <li>You let go of the browser and focus on the functional structure of a website</li>
+  <li>You let go of the information architecture of the website and start reading</li>
+  <li>You then jump around between levels 4 and 7 until you stop reading in the browser</li>
+</ul>
+
+<p>If you compare the overall information architecture of a website to a book, you will notice that the difficulty in reading a digital text is not just a matter of all the synchronous processes, or the typographic design of digital text. Think about the number of frames of reference that you need to enter, the number of levels that you need to climb down—and the mindset that this climbing requires—until you reach a digital text. How much more complexity do you need once you reach the ultimate text layer? Why is it that once we reach the text, we hardly stay there for more than a couple of minutes?</p>
 
 <p>The reader gets constantly distracted by links, related content, navigation, blinking elements, and jumping icons in the dock. Instead of keeping readers in the continuity of the text, they are constantly ejected into a different level of Super Mario Land.</p>
 
 <h3 id="reading-a-printed-book">2.2 Reading a printed book</h3>
 <p>Just like a digital text, a printed text is embedded in different invisible frames through which you need to cross to get to the body text. There are various ways to embed text in a book, magazine or pamphlet. The following architecture of a book is, again, just an example:</p>
 
-<p>The dust jacket or cover, with the title, author and edition
-The back cover, with quotes and more information about the author and content
-The dust jacket flaps, with more information about author and content, both in the front and back
-One or more empty pages
-Copyright information
-An empty page
-Author’s dedication or quote
-The title page
-More empty pages
-The table of contents (either at the front or back of the book)
-An empty page
-The title again
-The preface
-The title of the first chapter
-The main text
-Empty pages
-The index
-Empty pages</p>
+<ul>
+  <li>The dust jacket or cover, with the title, author and edition</li>
+  <li>The back cover, with quotes and more information about the author and content</li>
+  <li>The dust jacket flaps, with more information about author and content, both in the front and back</li>
+  <li>One or more empty pages</li>
+  <li>Copyright information</li>
+  <li>An empty page</li>
+  <li>Author’s dedication or quote</li>
+  <li>The title page</li>
+  <li>More empty pages</li>
+  <li>The table of contents (either at the front or back of the book)</li>
+  <li>An empty page</li>
+  <li>The title again</li>
+  <li>The preface</li>
+  <li>The title of the first chapter</li>
+  <li>The main text</li>
+  <li>Empty pages</li>
+  <li>The index</li>
+  <li>Empty pages</li>
+</ul>
 
 <p>As you can see, books also have a series of levels or frames that we cross to get to the main text. Studying these layers it becomes clear that books are not as linear as they first appear—before opening a book many people look at the back cover, the dust jacket flaps, and the table of contents. But a well written book follows a pattern of continuity and clarity that is simpler and clearer that your average thought process.</p>
 
@@ -148,16 +164,17 @@ The benefits of a linear, finite information architecture has been promoted agai
 <h3 id="information-architecture">3.1 Information Architecture</h3>
 <p>Print and digital have a different mental model, and offer different content. If you look at a printed book you do not have the exact same thoughts as when you look at a file name. This becomes even more obvious if you just look at the printed artifact as an object:</p>
 
-<p>A printed text can tell you in a glance where in the text you are, how much you have read, and how much is left to read
-A printed text defines a pretty good spatial landscape to remember where in the book you read something
-A printed text captures traces of where and when you read it
-A digital text, on the other hand, has completely different strengths and weaknesses:</p>
-
-<p>It’s easy to find a particular sentence
-It can tell you how much time you spent with it, and how much time is left
-It’s hard to remember text location, but easy to work with text, e.g. sharing text highlights and taking notes
-It can adapt to your personal needs and taste
-While the printed text has been refined over centuries, the digital text is still young.</p>
+<ul>
+  <li>A printed text can tell you in a glance where in the text you are, how much you have read, and how much is left to read</li>
+  <li>A printed text defines a pretty good spatial landscape to remember where in the book you read something</li>
+  <li>A printed text captures traces of where and when you read it</li>
+  <li>A digital text, on the other hand, has completely different strengths and weaknesses:</li>
+  <li>It’s easy to find a particular sentence</li>
+  <li>It can tell you how much time you spent with it, and how much time is left</li>
+  <li>It’s hard to remember text location, but easy to work with text, e.g. sharing text highlights and taking notes</li>
+  <li>It can adapt to your personal needs and taste</li>
+  <li>While the printed text has been refined over centuries, the digital text is still young.</li>
+</ul>
 
 <h3 id="interaction-design">3.2 Interaction Design</h3>
 <p>Most reading interfaces are not based on the most basic User Interface principle: “Minimal input—maximal output”. They are a result of a desired feature list. These features are then crammed into one interaction design.</p>
@@ -191,7 +208,63 @@ While the printed text has been refined over centuries, the digital text is stil
 
 <p>The technical challenges, information architecture, interaction design, and digital typography are complex and tough. But if our goal is to build digital reading interfaces that improve the efficiency of our reading experience as much as the bicycle improved the efficiency of our legs, we have to not just optimize screen typography and type design, but rethink reading and writing from inside out.</p>
 
+<script>
+	var howManyMinutes= 14
+
+	var numMinutes    = 60 * howManyMinutes;
+	var timeoutVal	  = Math.floor(numMinutes/100);
+
+	function startTimer(duration, display) {
+	    var timer = duration, minutes, seconds;
+	    timerInterval = setInterval(function () {
+	        minutes = parseInt(timer / 60, 10)
+	        seconds = parseInt(timer % 60, 10);
+
+	        minutes = minutes < 10 ? "0" + minutes : minutes;
+	        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+	        display.textContent = minutes + ":" + seconds;
+
+	        if (--timer < 0) {
+	            timer = duration;
+	        }
+	        percentage = 1 - (timer/duration);
+	        animateUpdate();
+	    }, 1000);
+	}
+	function updateProgress(percentage) {
+	    document.getElementById('progress').style.transform = "scaleX(" + percentage + ")";
+	}
+	function animateUpdate() {
+		if (percentage != 0) {
+			updateProgress(percentage);
+			setTimeout(animateUpdate, timeoutVal);
+		} else {
+			clearInterval(timerInterval);
+			document.getElementById('improving-the-digital-reading-experience').classList.add('complete');
+		}
+	}
+
+	// Button Event Listener
+	var beginButton = document.getElementById('js--beginTimer');
+	beginButton.addEventListener('click', function () {
+
+	    display = document.querySelector('#js--time');
+	    startTimer(numMinutes, display);
+
+	    var elems = document.querySelectorAll("#js--beginTimer-wrapper ~ *:not(script)");
+	    [].forEach.call(elems, function(e) {
+            e.style.display = 'block';
+        });
+
+	    beginButton.style.display = 'none';
+	});
+</script>
+
+
 	</div>
+
+	<div id="progress"></div>
 
 </article>
 
