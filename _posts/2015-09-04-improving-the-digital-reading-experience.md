@@ -100,7 +100,7 @@ To be able to design a better reading experience at the most basic level, we hav
 
 One way to make software look like a bicycle for our minds is skeuomorphism: making digital interfaces that look—but don’t work—like analog tools. But beware. A digital book that looks like a physical hardcover but works like a video recorder will backfire. As Jan Tschichold wrote in Meisterbuch der Schrift (The Masterbook of Typography):
 
-What one wants but cannot achieve, becomes kitsch.
+> "What one wants but cannot achieve, becomes kitsch."
 
 "Winnie The Pooh" in iBooks looks great in a TV spot for iPad, but as soon as you use it you know it’s a fake print product. The information is forced into a structure that is not medium-appropriate, the interaction is painful, and the typography is random. Instead of studying and imitating the look of analog devices, we need to observe what our mind does when we use them.
 
