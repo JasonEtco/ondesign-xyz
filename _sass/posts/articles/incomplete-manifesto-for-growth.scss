@@ -30,7 +30,7 @@
 					counter-increment: quote-counter;
 					position: absolute;
 					left: -3rem;
-					top: -0.2rem;
+					top: 0;
 					color: $red;
 					@include baseline(1);
 				}
@@ -84,6 +84,18 @@
 		z-index: -1;
 	}
 
+	// 8. Drift.
+	li:nth-child(8) {
+		@keyframes drift {
+			0% {letter-spacing: 0;}
+			50% {letter-spacing: 0.5em;}
+			100% {letter-spacing: 0;}
+		}
+		h2 {
+			animation: drift 6s ease-in-out infinite;
+		}
+	}
+
 	// 9. Begin anywhere.
 	li:nth-child(9) h2::before {
 		content: 'Like Here';
@@ -114,6 +126,11 @@
 	// 15. Ask stupid questions.
 	li:nth-child(15) .list-item__inner::before {
 		content: counter(quote-counter) "?";
+	}
+
+	// 17. _______.
+	li:nth-child(17) {
+		color: darken($almost-white, 10%);
 	}
 
 	// 21. Repeat yourself.

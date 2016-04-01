@@ -1,25 +1,75 @@
-#js--time {
-	position: fixed;
-	top: 4rem;
-	left: 1rem;
-	@include baseline(1);
-	font-family: $accent-stack;
-}
+#improving-the-digital-reading-experience {
 
-#improving-the-digital-reading-experience .post__content {
-
-	#js--beginTimer-wrapper ~ * {
-		display: none;
-	}
-
-	#js--beginTimer {
+	#js--time {
+		position: fixed;
+		top: 4rem;
+		left: 1rem;
 		@include baseline(1);
-		font-family: $title-stack;
-		width: 100%;
-		padding: 0;
-		border: none;
-		color: white;
-		background-color: $red;
+		font-family: $accent-stack;
 	}
 
+	#progress {
+		height: 20px;
+		width: 100%;
+		background-color: $red;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		transform: scaleX(0);
+		transform-origin: center left;
+		transition: transform 1s ease-in-out;
+	}
+
+	.too-late {
+		display: none;
+
+		&__refresh {
+			color: $red;
+			position: relative;
+			text-decoration: none;
+			@include baseline(2);
+
+			&::after {
+				content: '';
+				width: 100%;
+				height: 2px;
+				background-color: $red;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				transition: transform 0.25s ease-in-out;
+			}
+
+			&:hover::after {
+				transform: translateY(4px);
+			}
+		}
+	}
+
+	&.complete {
+		#js--time { display: none; }
+		.post__content {
+			& > * { display: none !important; }
+			& .too-late { display: block !important; }
+		}
+	}
+
+	.post__content {
+		#js--beginTimer-wrapper {
+			text-align: center;
+			margin-top: $base-line-height * 2;
+		}
+
+		#js--beginTimer-wrapper ~ * { display: none; }
+
+		#js--beginTimer {
+			@include baseline(1);
+			font-family: $title-stack;
+			color: white;
+			background-color: $red;
+			display: inline-block;
+			padding: 0 1em;
+			text-decoration: none;
+		}
+	}
 }

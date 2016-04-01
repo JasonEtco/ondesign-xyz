@@ -86,7 +86,7 @@ You might find something in the morning that you can’t see tonight.
 Just don’t. It’s not good for you.
 
 27. ## Read only left-hand pages.
-Marshall McLuhan did this. By decreasing the amount of information, we leave room for what he called our “noodle.”
+Marshall McLuhan did this. By decreasing the amount of information, we leave room for what he called our "noodle."
 
 28. ## Make new words.
 Expand the lexicon. The new conditions demand a new way of thinking. The thinking demands new forms of expression. The expression generates new conditions.
@@ -95,7 +95,7 @@ Expand the lexicon. The new conditions demand a new way of thinking. The thinkin
 Forget technology. Creativity is not device-dependent.
 
 30. ## Organization = Liberty.
-Real innovation in design, or any other field, happens in context. That context is usually some form of cooperatively managed enterprise. Frank Gehry, for instance, is only able to realize Bilbao because his studio can deliver it on budget. The myth of a split between “creatives” and “suits” is what Leonard Cohen calls a ‘charming artifact of the past.’
+Real innovation in design, or any other field, happens in context. That context is usually some form of cooperatively managed enterprise. Frank Gehry, for instance, is only able to realize Bilbao because his studio can deliver it on budget. The myth of a split between "creatives" and "suits" is what Leonard Cohen calls a ‘charming artifact of the past.’
 
 31. ## Don’t borrow money.
 Once again, Frank Gehry’s advice. By maintaining financial control, we maintain creative control. It’s not exactly rocket science, but it’s surprising how hard it is to maintain this discipline, and how many have failed.
@@ -107,7 +107,7 @@ Every collaborator who enters our orbit brings with him or her a world more stra
 The bandwidth of the world is greater than that of your TV set, or the Internet, or even a totally immersive, interactive, dynamically rendered, object-oriented, real-time, computer graphic–simulated environment.
 
 34. ## Make mistakes faster.
-This isn’t my idea — I borrowed it. I think it belongs to Andy Grove.
+This isn’t my idea&mdash;I borrowed it. I think it belongs to Andy Grove.
 
 35. ## Imitate.
 Don’t be shy about it. Try to get as close as you can. You’ll never get all the way, and the separation might be truly remarkable. We have only to look to Richard Hamilton and his version of Marcel Duchamp’s large glass to see how rich, discredited, and underused imitation is as a technique.
@@ -121,7 +121,7 @@ When you forget the words, do what Ella did: make up something else... but not w
 Great liberty exists when we avoid trying to run with the technological pack. We can’t find the leading edge because it’s trampled underfoot. Try using old-tech equipment made obsolete by an economic cycle but still rich with potential.
 
 39. ## Coffee breaks, cab rides, green rooms.
-Real growth often happens outside of where we intend it to, in the interstitial spaces — what Dr. Seuss calls “the waiting place.” Hans Ulrich Obrist once organized a science and art conference with all of the infrastructure of a conference — the parties, chats, lunches, airport arrivals — but with no actual conference. Apparently it was hugely successful and spawned many ongoing collaborations.
+Real growth often happens outside of where we intend it to, in the interstitial spaces&mdash;what Dr. Seuss calls "the waiting place." Hans Ulrich Obrist once organized a science and art conference with all of the infrastructure of a conference&mdash;the parties, chats, lunches, airport arrivals&mdash;but with no actual conference. Apparently it was hugely successful and spawned many ongoing collaborations.
 
 40. ## Avoid fields.
 Jump fences. Disciplinary boundaries and regulatory regimes are attempts to control the wilding of creative life. They are often understandable efforts to order what are manifold, complex, evolutionary processes. Our job is to jump the fences and cross the fields.
