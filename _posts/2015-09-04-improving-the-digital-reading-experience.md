@@ -198,5 +198,7 @@ The technical challenges, information architecture, interaction design, and digi
             e.style.display = 'block';
         });
 	    beginButton.style.display = 'none';
+
+	    orphanCrippler(document.querySelectorAll('#{{ page.title | slugify: "pretty" }} li'))
 	});
 </script>
