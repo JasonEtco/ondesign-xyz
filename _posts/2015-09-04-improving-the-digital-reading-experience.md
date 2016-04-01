@@ -197,7 +197,6 @@ The technical challenges, information architecture, interaction design, and digi
 	    [].forEach.call(elems, function(e) {
             e.style.display = 'block';
         });
-
 	    beginButton.style.display = 'none';
 	});
 </script>

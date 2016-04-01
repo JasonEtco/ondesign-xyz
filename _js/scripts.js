@@ -20,7 +20,7 @@ start = function() {
 	n=e.length?e:n.concat(e),Array.prototype.map.call(n,function(e){var n=String(e.innerHTML)
 	n=n.replace(/\s+/g," ").replace(/^\s|\s$/g,""),r.push(n?e.innerHTML=n.replace(new RegExp("((?:[^ ]* ){"+((n.match(/\s/g)||0).length-1)+"}[^ ]*) "),"$1&nbsp;"):void 0)})}
 
-	objs = document.querySelectorAll('.post__content p');
+	objs = document.querySelectorAll('.post__content p, .post__content li');
 	orphanCrippler(objs);
 
 

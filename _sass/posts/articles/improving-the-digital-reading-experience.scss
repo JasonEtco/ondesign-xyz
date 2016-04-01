@@ -1,5 +1,13 @@
 #improving-the-digital-reading-experience {
 
+	ul {
+		margin: $base-line-height 0;
+		li {
+			@include baseline(-1);
+			font-size: 1rem;
+		}
+	}
+
 	#js--time {
 		position: fixed;
 		top: 4rem;
