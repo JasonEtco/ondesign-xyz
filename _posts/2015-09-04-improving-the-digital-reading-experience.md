@@ -190,7 +190,10 @@ The technical challenges, information architecture, interaction design, and digi
 	var beginButton = document.getElementById('js--beginTimer');
 	beginButton.addEventListener('click', function () {
 
-	    display = document.querySelector('#js--time');
+	    display = document.createElement('div');
+	    display.setAttribute('id', 'js--time');
+	    document.querySelector('.post').insertBefore(display, document.querySelector('.post__content'));
+
 	    startTimer(numMinutes, display);
 
 	    var elems = document.querySelectorAll("#js--beginTimer-wrapper ~ *:not(script)");

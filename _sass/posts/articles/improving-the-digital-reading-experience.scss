@@ -12,8 +12,15 @@
 		position: fixed;
 		top: 4rem;
 		left: 1rem;
+		z-index: 98;
 		@include baseline(1);
 		font-family: $accent-stack;
+
+		@include media-query($on-mobile) {
+			padding: 0 1em;
+			background-color: $red;
+			color: $almost-white;
+		}
 	}
 
 	#progress {

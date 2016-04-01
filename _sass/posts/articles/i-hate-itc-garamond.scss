@@ -32,6 +32,10 @@
 
 	svg {
 		overflow: visible;
+		display: block;
+		margin: $base-line-height * 2 auto;
+		width: 95%;
+				
 		path {fill: $red;}
 		
 		@keyframes bounce {

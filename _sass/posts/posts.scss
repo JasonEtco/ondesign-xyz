@@ -10,6 +10,10 @@
 	&__header {
 		max-width: $max-width;
 		margin: 0 auto $base-line-height * 2 auto;
+
+		@include media-query($on-mobile) {
+			width: 95%;
+		}
 	}
 
 	&__title {

@@ -7,6 +7,11 @@
 	h2 {
 		display: inline-block;
 		position: relative;
+
+		@include media-query($on-mobile) {
+			line-height: $base-line-height;
+			margin-bottom: $base-line-height;
+		}
 	}
 	
 	ol {
@@ -25,6 +30,10 @@
 				margin: 0 auto;
 				position: relative;
 
+				@include media-query($on-mobile) {
+					width: 95%;
+				}
+
 				&::before {
 					content: counter(quote-counter);
 					counter-increment: quote-counter;
@@ -33,6 +42,11 @@
 					top: 0;
 					color: $red;
 					@include baseline(1);
+
+					@include media-query($on-mobile) {
+						left: 0;
+						top: -5rem;
+					}
 				}
 			}
 		}
@@ -131,6 +145,9 @@
 	// 17. _______.
 	li:nth-child(17) {
 		color: darken($almost-white, 10%);
+		.list-item__inner::before {
+			color: darken($almost-white, 10%) !important;
+		}
 	}
 
 	// 21. Repeat yourself.
@@ -145,6 +162,12 @@
 			column-count: 2;
 			column-gap: 9em;
 			background: linear-gradient(to right, transparent 50%, $darkgrey 50%);
+
+			@include media-query($on-mobile) {
+				padding: 0;
+				column-count: 1;
+				background: none;
+			}
 		}
 		& .list-item__inner:hover p {
 			background: none;
@@ -158,6 +181,10 @@
 
 		.list-item__inner::before {
 			color: $almost-white;
+
+			@include media-query($on-mobile) {
+				color: $red;
+			}
 		}
 	}
 

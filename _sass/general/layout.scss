@@ -29,11 +29,19 @@ body {
 	border: 2px solid $red;
 	padding: 0 1em;
 	z-index: 100;
+
+	@include media-query($on-mobile) {
+		display: none;
+	}	
 }
 
 h1, h2, h3 {
 	font-family: $title-stack;
-	margin: 0;
+	margin: 0 auto;
+	
+	@include media-query($on-mobile) {
+		width: 95%;
+	}
 }
 
 h1 {@include baseline(3); margin: 1 * $base-line-height 0;}
@@ -42,5 +50,9 @@ h3 {@include baseline(1);}
 
 p {
 	@include baseline(0);
-	margin: 0 0 $base-line-height 0;
+	margin: 0 auto $base-line-height auto;
+
+	@include media-query($on-mobile) {
+		width: 95%;
+	}
 }
