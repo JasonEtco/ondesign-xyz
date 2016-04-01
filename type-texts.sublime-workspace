@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"quer",
+				"querySelectorAll"
+			],
+			[
 				"backgrou",
 				"background-repeat"
 			],
@@ -36,10 +40,10 @@
 	"buffers":
 	[
 		{
-			"file": "_posts/2015-09-04-incomplete-manifesto-for-growth.md",
+			"file": "_js/scripts.js",
 			"settings":
 			{
-				"buffer_size": 9277,
+				"buffer_size": 1074,
 				"line_ending": "Windows"
 			}
 		},
@@ -47,7 +51,7 @@
 			"file": "_posts/2015-09-04-improving-the-digital-reading-experience.md",
 			"settings":
 			{
-				"buffer_size": 16246,
+				"buffer_size": 18283,
 				"line_ending": "Windows"
 			}
 		}
@@ -112,17 +116,23 @@
 		"/D/Desktop/Design/type-texts/_sass/posts/articles",
 		"/D/Desktop/Design/type-texts",
 		"/D/Desktop/Design/type-texts/_includes",
+		"/D/Desktop/Design/type-texts/_js",
+		"/D/Desktop/Design/type-texts/_layouts",
 		"/D/Desktop/Design/type-texts/_posts",
 		"/D/Desktop/Design/type-texts/css"
 	],
 	"file_history":
 	[
-		"/D/Desktop/Design/type-texts/_layouts/post.html",
+		"/D/Desktop/Design/type-texts/_posts/2015-09-04-i-hate-itc-garamond.md",
+		"/D/Desktop/Design/type-texts/_sass/posts/articles/improving-the-digital-reading-experience.scss",
 		"/D/Desktop/Design/type-texts/_sass/posts/posts.scss",
+		"/D/Desktop/Design/type-texts/_js/scripts.js",
+		"/D/Desktop/Design/type-texts/_posts/2015-09-04-improving-the-digital-reading-experience.md",
+		"/D/Desktop/Design/type-texts/_layouts/post.html",
+		"/D/Desktop/Design/type-texts/_sass/posts/articles/incomplete-manifesto-for-growth.scss",
+		"/D/Desktop/Design/type-texts/_posts/2015-09-04-incomplete-manifesto-for-growth.md",
 		"/D/Desktop/Design/type-texts/_sass/general/layout.scss",
 		"/D/Desktop/Design/type-texts/_includes/head.html",
-		"/D/Desktop/Design/type-texts/_sass/posts/articles/incomplete-manifesto-for-growth.scss",
-		"/D/Desktop/Design/type-texts/_posts/2015-09-04-i-hate-itc-garamond.md",
 		"/D/Desktop/Design/type-texts/_sass/general/nav.scss",
 		"/D/Desktop/Design/type-texts/_includes/header.html",
 		"/D/Desktop/Design/type-texts/_sass/tools/mixins.scss",
@@ -130,8 +140,6 @@
 		"/D/Desktop/Design/type-texts/_sass/tools/normalize.scss",
 		"/D/Desktop/Design/type-texts/_sass/tools/variables.scss",
 		"/D/Desktop/Design/type-texts/Gruntfile.js",
-		"/D/Desktop/Design/type-texts/_js/scripts.js",
-		"/D/Desktop/Design/type-texts/_posts/2015-09-04-incomplete-manifesto-for-growth.md",
 		"/D/Desktop/Design/type-texts/index.html",
 		"/D/Desktop/Design/type-texts/package.json",
 		"/D/Desktop/Design/type-texts/CNAME",
@@ -146,7 +154,6 @@
 		"/D/Desktop/Design/type-texts/_includes/icon-github.svg",
 		"/D/Desktop/Design/type-texts/_includes/icon-jasonetco.svg",
 		"/D/Desktop/Design/icons/_includes/icon-github.html",
-		"/D/Desktop/Design/type-texts/_posts/2015-09-04-improving-the-digital-reading-experience.md",
 		"/D/Desktop/Design/type-texts/type-texts.sublime-project",
 		"/C/Users/Jason/AppData/Roaming/Sublime Text 3/Packages/Gutter Color/GutterColor.sublime-settings",
 		"/C/Users/Jason/AppData/Roaming/Sublime Text 3/Packages/User/GutterColor.sublime-settings",
@@ -247,6 +254,27 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"-",
+			"'",
+			"A ",
+			"A",
+			"—",
+			"-",
+			"8",
+			"track",
+			"-",
+			"ink",
+			"\"",
+			",",
+			"”",
+			"“",
+			"button",
+			"maxTime",
+			"perc",
+			"button",
+			"”",
+			"“",
+			"—",
 			"span",
 			"0",
 			"-webkit-",
@@ -353,11 +381,7 @@
 			"fff",
 			"eigthSection",
 			"img",
-			"#24221F",
-			"img",
-			"style=\"background-image:url('LeTAZ/stationary.png');\"",
-			"section",
-			"horizontal-scrolling"
+			"#24221F"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -375,36 +399,36 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "_posts/2015-09-04-incomplete-manifesto-for-growth.md",
+					"file": "_js/scripts.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9277,
+						"buffer_size": 1074,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								153,
-								153
+								503,
+								503
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -413,15 +437,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 16246,
+						"buffer_size": 18283,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								225,
-								96
+								8039,
+								8039
 							]
 						],
 						"settings":
@@ -429,10 +453,10 @@
 							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2070.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

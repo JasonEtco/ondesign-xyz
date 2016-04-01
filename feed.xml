@@ -5,8 +5,8 @@
     <description>Intelligent writings by brilliant people.</description>
     <link>http://jasonet.co/</link>
     <atom:link href="http://jasonet.co/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 31 Mar 2016 22:57:18 -0400</pubDate>
-    <lastBuildDate>Thu, 31 Mar 2016 22:57:18 -0400</lastBuildDate>
+    <pubDate>Fri, 01 Apr 2016 16:47:40 -0400</pubDate>
+    <lastBuildDate>Fri, 01 Apr 2016 16:47:40 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -332,7 +332,9 @@ The benefits of a linear, finite information architecture has been promoted agai
 
 &lt;p&gt;One way to make software look like a bicycle for our minds is skeuomorphism: making digital interfaces that look—but don’t work—like analog tools. But beware. A digital book that looks like a physical hardcover but works like a video recorder will backfire. As Jan Tschichold wrote in Meisterbuch der Schrift (The Masterbook of Typography):&lt;/p&gt;
 
-&lt;p&gt;What one wants but cannot achieve, becomes kitsch.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;“What one wants but cannot achieve, becomes kitsch.”&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;“Winnie The Pooh” in iBooks looks great in a TV spot for iPad, but as soon as you use it you know it’s a fake print product. The information is forced into a structure that is not medium-appropriate, the interaction is painful, and the typography is random. Instead of studying and imitating the look of analog devices, we need to observe what our mind does when we use them.&lt;/p&gt;
 
@@ -424,7 +426,10 @@ The benefits of a linear, finite information architecture has been promoted agai
 	var beginButton = document.getElementById(&#39;js--beginTimer&#39;);
 	beginButton.addEventListener(&#39;click&#39;, function () {
 
-	    display = document.querySelector(&#39;#js--time&#39;);
+	    display = document.createElement(&#39;div&#39;);
+	    display.setAttribute(&#39;id&#39;, &#39;js--time&#39;);
+	    document.querySelector(&#39;.post&#39;).insertBefore(display, document.querySelector(&#39;.post__content&#39;));
+
 	    startTimer(numMinutes, display);
 
 	    var elems = document.querySelectorAll(&quot;#js--beginTimer-wrapper ~ *:not(script)&quot;);
