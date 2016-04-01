@@ -5,8 +5,8 @@
     <description>Intelligent writings by brilliant people.</description>
     <link>http://jasonet.co/</link>
     <atom:link href="http://jasonet.co/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 31 Mar 2016 21:54:53 -0400</pubDate>
-    <lastBuildDate>Thu, 31 Mar 2016 21:54:53 -0400</lastBuildDate>
+    <pubDate>Thu, 31 Mar 2016 22:50:13 -0400</pubDate>
+    <lastBuildDate>Thu, 31 Mar 2016 22:50:13 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -431,7 +431,6 @@ The benefits of a linear, finite information architecture has been promoted agai
 	    [].forEach.call(elems, function(e) {
             e.style.display = &#39;block&#39;;
         });
-
 	    beginButton.style.display = &#39;none&#39;;
 	});
 &lt;/script&gt;
