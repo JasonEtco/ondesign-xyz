@@ -13,6 +13,12 @@ start = function() {
 		    }
 		    position = scroll;
 	    }
+
+	    // Show grid background
+	    var gridButton = document.getElementById('js--gridButton');
+	    gridButton.addEventListener('click', function() {
+	    	document.body.classList.toggle('grid');
+	    });
 	}
 
 	// If there's an orphan, pushes other word to last line in paragraph
@@ -21,13 +27,5 @@ start = function() {
 	n=n.replace(/\s+/g," ").replace(/^\s|\s$/g,""),r.push(n?e.innerHTML=n.replace(new RegExp("((?:[^ ]* ){"+((n.match(/\s/g)||0).length-1)+"}[^ ]*) "),"$1&nbsp;"):void 0)})}
 
 	objs = document.querySelectorAll('.post__content p');
-	orphanCrippler(objs);
-
-
-	// Show grid background
-	var gridButton = document.getElementById('js--gridButton');
-	gridButton.addEventListener('click', function() {
-		document.body.classList.toggle('grid');
-	});
-	
+	orphanCrippler(objs);	
 }
