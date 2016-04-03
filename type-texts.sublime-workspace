@@ -40,10 +40,26 @@
 	"buffers":
 	[
 		{
-			"file": "_sass/posts/articles/i-hate-itc-garamond.scss",
+			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 910,
+				"buffer_size": 1148,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 3871,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_js/scripts.js",
+			"settings":
+			{
+				"buffer_size": 1092,
 				"line_ending": "Windows"
 			}
 		}
@@ -103,35 +119,29 @@
 	"expanded_folders":
 	[
 		"/D/Desktop/Design/type-texts/_sass",
-		"/D/Desktop/Design/type-texts/_sass/general",
-		"/D/Desktop/Design/type-texts/_sass/posts",
 		"/D/Desktop/Design/type-texts/_sass/posts/articles",
-		"/D/Desktop/Design/type-texts/_sass/tools",
 		"/D/Desktop/Design/type-texts",
-		"/D/Desktop/Design/type-texts/_includes",
-		"/D/Desktop/Design/type-texts/_js",
-		"/D/Desktop/Design/type-texts/_layouts",
-		"/D/Desktop/Design/type-texts/_posts",
-		"/D/Desktop/Design/type-texts/css"
+		"/D/Desktop/Design/type-texts/_js"
 	],
 	"file_history":
 	[
-		"/D/Desktop/Design/type-texts/index.html",
+		"/D/Desktop/Design/type-texts/_posts/2015-09-04-incomplete-manifesto-for-growth.md",
+		"/D/Desktop/Design/type-texts/_sass/general/nav.scss",
+		"/D/Desktop/Design/type-texts/_includes/header.html",
+		"/D/Desktop/Design/type-texts/_sass/posts/articles/incomplete-manifesto-for-growth.scss",
+		"/D/Desktop/Design/type-texts/_sass/general/layout.scss",
 		"/D/Desktop/Design/type-texts/_sass/homepage.scss",
-		"/D/Desktop/Design/type-texts/_sass/tools/mixins.scss",
+		"/D/Desktop/Design/type-texts/_layouts/default.html",
+		"/D/Desktop/Design/type-texts/_posts/2015-09-04-i-hate-itc-garamond.md",
 		"/D/Desktop/Design/type-texts/_posts/2015-09-04-improving-the-digital-reading-experience.md",
 		"/D/Desktop/Design/type-texts/_sass/posts/articles/improving-the-digital-reading-experience.scss",
-		"/D/Desktop/Design/type-texts/_sass/general/nav.scss",
-		"/D/Desktop/Design/type-texts/_sass/general/layout.scss",
-		"/D/Desktop/Design/type-texts/_sass/posts/posts.scss",
 		"/D/Desktop/Design/type-texts/_sass/posts/articles/i-hate-itc-garamond.scss",
-		"/D/Desktop/Design/type-texts/_sass/posts/articles/incomplete-manifesto-for-growth.scss",
+		"/D/Desktop/Design/type-texts/index.html",
+		"/D/Desktop/Design/type-texts/_sass/tools/mixins.scss",
+		"/D/Desktop/Design/type-texts/_sass/posts/posts.scss",
 		"/D/Desktop/Design/type-texts/_js/scripts.js",
-		"/D/Desktop/Design/type-texts/_posts/2015-09-04-i-hate-itc-garamond.md",
 		"/D/Desktop/Design/type-texts/_layouts/post.html",
-		"/D/Desktop/Design/type-texts/_posts/2015-09-04-incomplete-manifesto-for-growth.md",
 		"/D/Desktop/Design/type-texts/_includes/head.html",
-		"/D/Desktop/Design/type-texts/_includes/header.html",
 		"/D/Desktop/Design/type-texts/_sass/tools/normalize.scss",
 		"/D/Desktop/Design/type-texts/_sass/tools/variables.scss",
 		"/D/Desktop/Design/type-texts/Gruntfile.js",
@@ -144,7 +154,6 @@
 		"/D/Desktop/Design/type-texts/_config.yml",
 		"/D/Desktop/Design/type-texts/css/styles.scss",
 		"/D/Desktop/Design/type-texts/_sass/pages/post.scss",
-		"/D/Desktop/Design/type-texts/_layouts/default.html",
 		"/D/Desktop/Design/type-texts/_includes/icon-github.svg",
 		"/D/Desktop/Design/type-texts/_includes/icon-jasonetco.svg",
 		"/D/Desktop/Design/icons/_includes/icon-github.html",
@@ -393,58 +402,91 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "_sass/posts/articles/i-hate-itc-garamond.scss",
+					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 910,
+						"buffer_size": 1148,
 						"regions":
 						{
-							"gutter_color_176":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										176,
-										199
-									]
-								],
-								"scope": "gutter_color"
-							},
-							"gutter_color_356":
-							{
-								"flags": 144,
-								"icon": "Cache/GutterColor/white.png",
-								"regions":
-								[
-									[
-										356,
-										380
-									]
-								],
-								"scope": "gutter_color"
-							}
 						},
 						"selection":
 						[
 							[
-								272,
-								272
+								932,
+								932
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Gruntfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3871,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Seti_UI/icons/Langs/Gruntfile JS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
 						"translation.x": -0.0,
+						"translation.y": 1083.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_js/scripts.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1092,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								632,
+								632
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
