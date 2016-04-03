@@ -150,6 +150,10 @@ The computer is an extension of our mind. To design better software we need to b
 The technical challenges, information architecture, interaction design, and digital typography are complex and tough. But if our goal is to build digital reading interfaces that improve the efficiency of our reading experience as much as the bicycle improved the efficiency of our legs, we have to not just optimize screen typography and type design, but rethink reading and writing from inside out.
 
 <script>
+	document.querySelector('nav a').addEventListener('click', function() {
+		clearInterval(timerInterval);
+	});
+
 	var howManyMinutes= 14
 
 	var numMinutes    = 60 * howManyMinutes;

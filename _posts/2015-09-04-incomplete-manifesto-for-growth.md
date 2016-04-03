@@ -106,7 +106,7 @@ Every collaborator who enters our orbit brings with him or her a world more stra
 33. ## Take field trips.
 The bandwidth of the world is greater than that of your TV set, or the Internet, or even a totally immersive, interactive, dynamically rendered, object-oriented, real-time, computer graphic–simulated environment.
 
-34. ## Make mistakes faster.
+34. ## Makesmitakes fastrer.
 This isn’t my idea&mdash;I borrowed it. I think it belongs to Andy Grove.
 
 35. ## Imitate.

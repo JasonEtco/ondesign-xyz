@@ -24,6 +24,11 @@
 			margin: $base-line-height * 3 0;
 			padding: $base-line-height 0;
 
+			@include media-query($on-mobile) {
+				margin: $base-line-height 0;
+				padding: 0;
+			}
+
 			.list-item__inner {
 				width: 100%;
 				max-width: $max-width;
@@ -32,6 +37,11 @@
 
 				@include media-query($on-mobile) {
 					width: 95%;
+					overflow-x: hidden;
+
+					p {
+						width: 100%;
+					}
 				}
 
 				&::before {
@@ -44,8 +54,8 @@
 					@include baseline(1);
 
 					@include media-query($on-mobile) {
-						left: 0;
-						top: -5rem;
+						position: static;
+						display: block;
 					}
 				}
 			}
@@ -73,6 +83,10 @@
 				left: 0;
 				bottom: 1rem;
 				transition: transform 0.25s ease-in-out;
+
+				@include media-query($on-mobile) {
+					bottom: 0;
+				}
 			}
 			&:hover::after {
 				transform: translateY(4px);
@@ -181,10 +195,6 @@
 
 		.list-item__inner::before {
 			color: $almost-white;
-
-			@include media-query($on-mobile) {
-				color: $red;
-			}
 		}
 	}
 

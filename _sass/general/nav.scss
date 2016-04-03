@@ -77,3 +77,22 @@
 		text-align: right;
 	}
 }
+
+#js--gridButton {
+	position: fixed;
+	top: 5rem;
+	left: 1rem;
+	@include baseline(-1);
+	font-family: $accent-stack;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: $red;
+	background-color: $almost-white;
+	border: 2px solid $red;
+	padding: 0 1em;
+	z-index: 100;
+
+	@include media-query($on-mobile) {
+		display: none;
+	}	
+}

@@ -11,6 +11,10 @@
 	box-sizing: border-box;
 	border: 1rem solid $almost-white;
 	padding: 2rem;
+
+	@include media-query($on-mobile) {
+		border: none;
+	}
 }
 
 .home {
