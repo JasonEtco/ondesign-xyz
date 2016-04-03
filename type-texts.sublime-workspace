@@ -40,18 +40,10 @@
 	"buffers":
 	[
 		{
-			"file": "_js/scripts.js",
+			"file": "_sass/posts/articles/i-hate-itc-garamond.scss",
 			"settings":
 			{
-				"buffer_size": 1074,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "_posts/2015-09-04-improving-the-digital-reading-experience.md",
-			"settings":
-			{
-				"buffer_size": 18283,
+				"buffer_size": 910,
 				"line_ending": "Windows"
 			}
 		}
@@ -114,6 +106,7 @@
 		"/D/Desktop/Design/type-texts/_sass/general",
 		"/D/Desktop/Design/type-texts/_sass/posts",
 		"/D/Desktop/Design/type-texts/_sass/posts/articles",
+		"/D/Desktop/Design/type-texts/_sass/tools",
 		"/D/Desktop/Design/type-texts",
 		"/D/Desktop/Design/type-texts/_includes",
 		"/D/Desktop/Design/type-texts/_js",
@@ -123,24 +116,25 @@
 	],
 	"file_history":
 	[
-		"/D/Desktop/Design/type-texts/_posts/2015-09-04-i-hate-itc-garamond.md",
-		"/D/Desktop/Design/type-texts/_sass/posts/articles/improving-the-digital-reading-experience.scss",
-		"/D/Desktop/Design/type-texts/_sass/posts/posts.scss",
-		"/D/Desktop/Design/type-texts/_js/scripts.js",
-		"/D/Desktop/Design/type-texts/_posts/2015-09-04-improving-the-digital-reading-experience.md",
-		"/D/Desktop/Design/type-texts/_layouts/post.html",
-		"/D/Desktop/Design/type-texts/_sass/posts/articles/incomplete-manifesto-for-growth.scss",
-		"/D/Desktop/Design/type-texts/_posts/2015-09-04-incomplete-manifesto-for-growth.md",
-		"/D/Desktop/Design/type-texts/_sass/general/layout.scss",
-		"/D/Desktop/Design/type-texts/_includes/head.html",
-		"/D/Desktop/Design/type-texts/_sass/general/nav.scss",
-		"/D/Desktop/Design/type-texts/_includes/header.html",
-		"/D/Desktop/Design/type-texts/_sass/tools/mixins.scss",
+		"/D/Desktop/Design/type-texts/index.html",
 		"/D/Desktop/Design/type-texts/_sass/homepage.scss",
+		"/D/Desktop/Design/type-texts/_sass/tools/mixins.scss",
+		"/D/Desktop/Design/type-texts/_posts/2015-09-04-improving-the-digital-reading-experience.md",
+		"/D/Desktop/Design/type-texts/_sass/posts/articles/improving-the-digital-reading-experience.scss",
+		"/D/Desktop/Design/type-texts/_sass/general/nav.scss",
+		"/D/Desktop/Design/type-texts/_sass/general/layout.scss",
+		"/D/Desktop/Design/type-texts/_sass/posts/posts.scss",
+		"/D/Desktop/Design/type-texts/_sass/posts/articles/i-hate-itc-garamond.scss",
+		"/D/Desktop/Design/type-texts/_sass/posts/articles/incomplete-manifesto-for-growth.scss",
+		"/D/Desktop/Design/type-texts/_js/scripts.js",
+		"/D/Desktop/Design/type-texts/_posts/2015-09-04-i-hate-itc-garamond.md",
+		"/D/Desktop/Design/type-texts/_layouts/post.html",
+		"/D/Desktop/Design/type-texts/_posts/2015-09-04-incomplete-manifesto-for-growth.md",
+		"/D/Desktop/Design/type-texts/_includes/head.html",
+		"/D/Desktop/Design/type-texts/_includes/header.html",
 		"/D/Desktop/Design/type-texts/_sass/tools/normalize.scss",
 		"/D/Desktop/Design/type-texts/_sass/tools/variables.scss",
 		"/D/Desktop/Design/type-texts/Gruntfile.js",
-		"/D/Desktop/Design/type-texts/index.html",
 		"/D/Desktop/Design/type-texts/package.json",
 		"/D/Desktop/Design/type-texts/CNAME",
 		"/D/Desktop/Design/type-texts/_includes/scripts.html",
@@ -254,6 +248,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"0",
+			"2rem",
 			"-",
 			"'",
 			"A ",
@@ -379,9 +375,7 @@
 			"50",
 			"png",
 			"fff",
-			"eigthSection",
-			"img",
-			"#24221F"
+			"eigthSection"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -399,61 +393,59 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "_js/scripts.js",
+					"file": "_sass/posts/articles/i-hate-itc-garamond.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1074,
+						"buffer_size": 910,
 						"regions":
 						{
+							"gutter_color_176":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/white.png",
+								"regions":
+								[
+									[
+										176,
+										199
+									]
+								],
+								"scope": "gutter_color"
+							},
+							"gutter_color_356":
+							{
+								"flags": 144,
+								"icon": "Cache/GutterColor/white.png",
+								"regions":
+								[
+									[
+										356,
+										380
+									]
+								],
+								"scope": "gutter_color"
+							}
 						},
 						"selection":
 						[
 							[
-								503,
-								503
+								272,
+								272
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
+						"translation.x": -0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "_posts/2015-09-04-improving-the-digital-reading-experience.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 18283,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8039,
-								8039
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2070.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

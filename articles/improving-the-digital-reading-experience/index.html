@@ -35,11 +35,11 @@
 
     <body>
 	    <main rel="main" class="content-wrapper" id="main">
-	    	<button id="js--gridButton">Toggle Grid</button>
 
 	        <header class="site-header scene-element scene-element--fade-in-down" id="site-header">
 	<div class="nav__wrapper">
 		<nav>
+			<button id="js--gridButton">Toggle Grid</button>
 			<a href="/">Index</a>
 			<div class="nav__current"><h3 class="nav__title">Improving the Digital Reading Experience</h3><p> by Information Architects</p></div>
 		</nav>
@@ -211,6 +211,10 @@ The benefits of a linear, finite information architecture has been promoted agai
 <p>The technical challenges, information architecture, interaction design, and digital typography are complex and tough. But if our goal is to build digital reading interfaces that improve the efficiency of our reading experience as much as the bicycle improved the efficiency of our legs, we have to not just optimize screen typography and type design, but rethink reading and writing from inside out.</p>
 
 <script>
+	document.querySelector('nav a').addEventListener('click', function() {
+		clearInterval(timerInterval);
+	});
+
 	var howManyMinutes= 14
 
 	var numMinutes    = 60 * howManyMinutes;

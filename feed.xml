@@ -5,8 +5,8 @@
     <description>Intelligent writings by brilliant people.</description>
     <link>http://jasonet.co/</link>
     <atom:link href="http://jasonet.co/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 01 Apr 2016 16:47:40 -0400</pubDate>
-    <lastBuildDate>Fri, 01 Apr 2016 16:47:40 -0400</lastBuildDate>
+    <pubDate>Sun, 03 Apr 2016 16:45:14 -0400</pubDate>
+    <lastBuildDate>Sun, 03 Apr 2016 16:45:14 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -149,7 +149,7 @@
     &lt;p&gt;The bandwidth of the world is greater than that of your TV set, or the Internet, or even a totally immersive, interactive, dynamically rendered, object-oriented, real-time, computer graphic–simulated environment.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;h2 id=&quot;make-mistakes-faster&quot;&gt;Make mistakes faster.&lt;/h2&gt;
+    &lt;h2 id=&quot;makesmitakes-fastrer&quot;&gt;Makesmitakes fastrer.&lt;/h2&gt;
     &lt;p&gt;This isn’t my idea—I borrowed it. I think it belongs to Andy Grove.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
@@ -386,6 +386,10 @@ The benefits of a linear, finite information architecture has been promoted agai
 &lt;p&gt;The technical challenges, information architecture, interaction design, and digital typography are complex and tough. But if our goal is to build digital reading interfaces that improve the efficiency of our reading experience as much as the bicycle improved the efficiency of our legs, we have to not just optimize screen typography and type design, but rethink reading and writing from inside out.&lt;/p&gt;
 
 &lt;script&gt;
+	document.querySelector(&#39;nav a&#39;).addEventListener(&#39;click&#39;, function() {
+		clearInterval(timerInterval);
+	});
+
 	var howManyMinutes= 14
 
 	var numMinutes    = 60 * howManyMinutes;
