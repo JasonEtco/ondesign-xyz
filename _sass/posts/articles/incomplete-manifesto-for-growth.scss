@@ -62,8 +62,8 @@
 		}
 	}
 
-	// 1. Allow events to change you.
-	li:nth-child(1) {
+	// 1. Allow events to change you. && 34. Make mistakes faster.
+	li:nth-child(1), li:nth-child(35) {
 		button {
 			margin: 0;
 			border: none;

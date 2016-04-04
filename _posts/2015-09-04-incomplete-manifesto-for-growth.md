@@ -106,7 +106,7 @@ Every collaborator who enters our orbit brings with him or her a world more stra
 33. ## Take field trips.
 The bandwidth of the world is greater than that of your TV set, or the Internet, or even a totally immersive, interactive, dynamically rendered, object-oriented, real-time, computer graphic–simulated environment.
 
-34. ## Makesmitakes fastrer.
+34. ## <button id="makeMistake">Make</button> <span id="mistakes">mistakes</span> faster.
 This isn’t my idea&mdash;I borrowed it. I think it belongs to Andy Grove.
 
 35. ## Imitate.
@@ -166,4 +166,22 @@ Play can only happen when people feel they have control over their lives. We can
 		changeYou.classList.toggle('changed');
 	});
 
+	// 34. Make mistakes faster.
+	var mistakes = document.getElementById('mistakes');
+	String.prototype.shuffle = function () {
+	    var a = this.split(""),
+	        n = a.length;
+
+	    for(var i = n - 1; i > 0; i--) {
+	        var j = Math.floor(Math.random() * (i + 1));
+	        var tmp = a[i];
+	        a[i] = a[j];
+	        a[j] = tmp;
+	    }
+	    return a.join("");
+	}
+	makeMistake.addEventListener('click', function() {
+		newMistake = mistakes.innerHTML.shuffle();
+		mistakes.innerHTML = newMistake;
+	});
 </script>
