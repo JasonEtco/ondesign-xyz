@@ -40,34 +40,10 @@
 	"buffers":
 	[
 		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 1148,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Gruntfile.js",
-			"settings":
-			{
-				"buffer_size": 3871,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "_js/scripts.js",
 			"settings":
 			{
-				"buffer_size": 1092,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "CNAME",
-			"settings":
-			{
-				"buffer_size": 15,
+				"buffer_size": 1090,
 				"line_ending": "Windows"
 			}
 		}
@@ -132,6 +108,9 @@
 	],
 	"file_history":
 	[
+		"/D/Desktop/Design/type-texts/index.html",
+		"/D/Desktop/Design/type-texts/Gruntfile.js",
+		"/D/Desktop/Design/type-texts/CNAME",
 		"/D/Desktop/Design/type-texts/_posts/2015-09-04-incomplete-manifesto-for-growth.md",
 		"/D/Desktop/Design/type-texts/_sass/general/nav.scss",
 		"/D/Desktop/Design/type-texts/_includes/header.html",
@@ -143,7 +122,6 @@
 		"/D/Desktop/Design/type-texts/_posts/2015-09-04-improving-the-digital-reading-experience.md",
 		"/D/Desktop/Design/type-texts/_sass/posts/articles/improving-the-digital-reading-experience.scss",
 		"/D/Desktop/Design/type-texts/_sass/posts/articles/i-hate-itc-garamond.scss",
-		"/D/Desktop/Design/type-texts/index.html",
 		"/D/Desktop/Design/type-texts/_sass/tools/mixins.scss",
 		"/D/Desktop/Design/type-texts/_sass/posts/posts.scss",
 		"/D/Desktop/Design/type-texts/_js/scripts.js",
@@ -151,9 +129,7 @@
 		"/D/Desktop/Design/type-texts/_includes/head.html",
 		"/D/Desktop/Design/type-texts/_sass/tools/normalize.scss",
 		"/D/Desktop/Design/type-texts/_sass/tools/variables.scss",
-		"/D/Desktop/Design/type-texts/Gruntfile.js",
 		"/D/Desktop/Design/type-texts/package.json",
-		"/D/Desktop/Design/type-texts/CNAME",
 		"/D/Desktop/Design/type-texts/_includes/scripts.html",
 		"/D/Desktop/Design/type-texts/_site/articles/incomplete-manifesto-for-growth/index.html",
 		"/D/Desktop/Design/type-texts/_site/main.js",
@@ -409,117 +385,30 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1148,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								932,
-								932
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Gruntfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3871,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Seti_UI/icons/Langs/Gruntfile JS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 1083.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "_js/scripts.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1092,
+						"buffer_size": 1090,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								632,
-								632
+								837,
+								837
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "CNAME",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 15,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4,
-								4
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
