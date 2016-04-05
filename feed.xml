@@ -5,8 +5,8 @@
     <description>Intelligent writings by brilliant people.</description>
     <link>http://jasonet.co/</link>
     <atom:link href="http://jasonet.co/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 03 Apr 2016 18:53:15 -0400</pubDate>
-    <lastBuildDate>Sun, 03 Apr 2016 18:53:15 -0400</lastBuildDate>
+    <pubDate>Mon, 04 Apr 2016 22:00:55 -0400</pubDate>
+    <lastBuildDate>Mon, 04 Apr 2016 22:00:55 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -149,7 +149,7 @@
     &lt;p&gt;The bandwidth of the world is greater than that of your TV set, or the Internet, or even a totally immersive, interactive, dynamically rendered, object-oriented, real-time, computer graphic–simulated environment.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;h2 id=&quot;makesmitakes-fastrer&quot;&gt;Makesmitakes fastrer.&lt;/h2&gt;
+    &lt;h2 id=&quot;button-idmakemistakemakebutton-span-idmistakesmistakesspan-faster&quot;&gt;&lt;button id=&quot;makeMistake&quot;&gt;Make&lt;/button&gt; &lt;span id=&quot;mistakes&quot;&gt;mistakes&lt;/span&gt; faster.&lt;/h2&gt;
     &lt;p&gt;This isn’t my idea—I borrowed it. I think it belongs to Andy Grove.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
@@ -220,6 +220,24 @@
 		changeYou.classList.toggle(&#39;changed&#39;);
 	});
 
+	// 34. Make mistakes faster.
+	var mistakes = document.getElementById(&#39;mistakes&#39;);
+	String.prototype.shuffle = function () {
+	    var a = this.split(&quot;&quot;),
+	        n = a.length;
+
+	    for(var i = n - 1; i &gt; 0; i--) {
+	        var j = Math.floor(Math.random() * (i + 1));
+	        var tmp = a[i];
+	        a[i] = a[j];
+	        a[j] = tmp;
+	    }
+	    return a.join(&quot;&quot;);
+	}
+	makeMistake.addEventListener(&#39;click&#39;, function() {
+		newMistake = mistakes.innerHTML.shuffle();
+		mistakes.innerHTML = newMistake;
+	});
 &lt;/script&gt;
 
 </description>
