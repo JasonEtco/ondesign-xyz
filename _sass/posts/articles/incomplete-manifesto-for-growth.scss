@@ -10,7 +10,8 @@
 
 		@include media-query($on-mobile) {
 			line-height: $base-line-height;
-			margin-bottom: $base-line-height;
+			margin: 0 0 $base-line-height 0;
+			display: block;
 		}
 	}
 	
@@ -55,9 +56,34 @@
 
 					@include media-query($on-mobile) {
 						position: static;
-						display: block;
+						display: inline-block;
 					}
 				}
+			}
+
+			.list-item__anchor {
+			    position: absolute;
+			    left: -3.2rem;
+			    top: 4.2rem;
+			    @include baseline(1);
+
+			    svg {
+			    	height: 1.4rem;
+			    	path {
+			    		fill: darken($almost-white, 20%);
+			    		transition: all 0.25s ease-in-out;
+			    	}
+			    }
+
+			    &:hover path {
+			    	fill: $darkgrey;
+			    }
+
+			    @include media-query($on-mobile) {
+			    	position: static;
+			    	display: inline-block;
+			    	margin-left: 1em;
+			    }
 			}
 		}
 	}
@@ -110,6 +136,10 @@
 		top: 0;
 		left: 0;
 		z-index: -1;
+
+		@include media-query($on-mobile) {
+			height: 100%;
+		}
 	}
 
 	// 8. Drift.

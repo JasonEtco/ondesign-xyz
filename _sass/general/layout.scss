@@ -18,7 +18,7 @@ body {
 
 h1, h2, h3 {
 	font-family: $title-stack;
-	margin: 0 auto;
+	margin: 0;
 	
 	@include media-query($on-mobile) {
 		width: 95%;
