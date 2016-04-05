@@ -7,9 +7,9 @@ start = function() {
 	    window.onscroll = function() {
 	    	var scroll = window.pageYOffset;
 		    if(scroll > position) {
-		         siteHeader.classList.add('js--site-header--hidden')
+		        siteHeader.classList.add('js--site-header--hidden')
 		    } else {
-		         siteHeader.classList.remove('js--site-header--hidden');
+		        siteHeader.classList.remove('js--site-header--hidden');
 		    }
 		    position = scroll;
 	    }
