@@ -14,79 +14,6 @@
 			display: block;
 		}
 	}
-	
-	ol {
-		list-style-type: none;
-		padding: 0;
-		counter-reset: quote-counter;
-
-		li {
-			width: 100%;
-			margin: $base-line-height * 3 0;
-			padding: $base-line-height 0;
-
-			@include media-query($on-mobile) {
-				margin: $base-line-height 0;
-				padding: 0;
-			}
-
-			.list-item__inner {
-				width: 100%;
-				max-width: $max-width;
-				margin: 0 auto;
-				position: relative;
-
-				@include media-query($on-mobile) {
-					width: 95%;
-					overflow-x: hidden;
-
-					p {
-						width: 100%;
-					}
-				}
-
-				&::before {
-					content: counter(quote-counter);
-					counter-increment: quote-counter;
-					position: absolute;
-					left: -3rem;
-					top: 0;
-					color: $red;
-					@include baseline(1);
-
-					@include media-query($on-mobile) {
-						position: static;
-						display: inline-block;
-					}
-				}
-			}
-
-			.list-item__anchor {
-			    position: absolute;
-			    left: -3.2rem;
-			    top: 4.2rem;
-			    @include baseline(1);
-
-			    svg {
-			    	height: 1.4rem;
-			    	path {
-			    		fill: darken($almost-white, 20%);
-			    		transition: all 0.25s ease-in-out;
-			    	}
-			    }
-
-			    &:hover path {
-			    	fill: $darkgrey;
-			    }
-
-			    @include media-query($on-mobile) {
-			    	position: static;
-			    	display: inline-block;
-			    	margin-left: 1em;
-			    }
-			}
-		}
-	}
 
 	// 1. Allow events to change you. && 34. Make mistakes faster.
 	li:nth-child(1), li:nth-child(35) {
@@ -120,7 +47,7 @@
 		}
 
 		#changeYou {
-			transition: color 0.5s ease-in-out;
+			transition: color 0.25s ease-in-out;
 			&.changed { color: $red; }
 		}
 	}
@@ -192,6 +119,9 @@
 		.list-item__inner::before {
 			color: darken($almost-white, 10%) !important;
 		}
+		.list-item__anchor path {
+			fill: darken($almost-white, 10%) !important; 
+		}
 	}
 
 	// 21. Repeat yourself.
@@ -226,11 +156,14 @@
 		.list-item__inner::before {
 			color: $almost-white;
 		}
-	}
 
-	// 43. Power to the people.
-	li:nth-child(43) a {
-		color: $red;
-		&:hover {color: $darkgrey;}
+		.list-item__anchor {
+			path {
+				fill: $almost-white;
+			}
+			&:hover path {
+				fill: darken($almost-white, 20%)
+			}
+		}
 	}
 }
