@@ -1,13 +1,5 @@
 #improving-the-digital-reading-experience {
 
-	ul {
-		margin: $base-line-height 0;
-		li {
-			@include baseline(-1);
-			font-size: 1rem;
-		}
-	}
-
 	#js--time {
 		position: fixed;
 		top: 4rem;
@@ -75,8 +67,6 @@
 			margin-top: $base-line-height * 2;
 		}
 
-		#js--beginTimer-wrapper ~ * { display: none; }
-
 		#js--beginTimer {
 			@include baseline(1);
 			font-family: $title-stack;
@@ -86,5 +76,96 @@
 			padding: 0 1em;
 			text-decoration: none;
 		}
+		
+		counter-reset: title-counter;
+		h2 {
+			margin-top: $base-line-height * 4;
+			position: relative;
+
+			&::before {
+				content: counter(title-counter);
+				counter-increment: title-counter;
+				position: absolute;
+				left: -3rem;
+				top: 0;
+				color: $red;
+				font-family: $title-stack;
+				@include baseline(2);
+
+				@include media-query($on-mobile) {
+					position: static;
+					display: inline-block;
+				}
+			}
+		}
+
+		h3 {
+			position: relative;
+
+			&::before {
+				content: attr(data-num);
+				position: absolute;
+				left: -3rem;
+				top: 0;
+				color: $red;
+				font-family: $title-stack;
+				@include baseline(1);
+
+				@include media-query($on-mobile) {
+					position: static;
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+	.red { color: $red; }
+
+	code {
+		background-color: darken($almost-white, 10%);
+		padding: 0.2em 0.6em;
+		border-radius: 4px;
+	}
+
+	blockquote.quote p {
+		position: relative;
+		display: inline-block;
+
+		&::before, &::after {
+			position: absolute;
+			color: $red;
+			font-size: 4rem;
+			line-height: initial;
+			top: 0.1em;
+		}
+		&::before {
+			content: "\201C";
+			left: -3rem;
+		}
+		&::after {
+			content: "\201D";
+			right: -3rem;
+		}
+	}
+
+	// DETAILS
+	@keyframes blink {
+		0% {opacity: 1;}
+		50% {opacity: 0;}
+		100% {opacity: 1;}
+	}
+	#blink {
+		animation: blink 0.5s ease-in-out infinite;
+	}
+
+	@keyframes mario {
+		0% {transform: translateY(0);}
+		50% {transform: translateY(-16px);}
+		10% {transform: translateY(0);}
+	}
+	.mario {
+		display: inline-block;
+		animation: mario 1s cubic-bezier(1,-0.6, 0.5, 0.8) infinite;
+		color: $red;
 	}
 }

@@ -38,6 +38,7 @@
 
 		blockquote {
 			margin: 0;
+			text-align: center;
 			p {
 				@include baseline(1);
 			}
@@ -46,94 +47,45 @@
 
 	ol {
 		list-style-type: none;
-		padding: 0;
-		counter-reset: quote-counter;
-
+		counter-reset: list-counter;
 		li {
-			width: 100%;
-			margin: $base-line-height * 3 0;
-			padding: $base-line-height 0;
+			@include baseline(0);
+			position: relative;
 
-			@include media-query($on-mobile) {
-				margin: $base-line-height 0;
-				padding: 0;
-			}
-
-			h2 a {
-				color: inherit;
-				position: relative;
-				text-decoration: none;
-
-				&::after {
-					content: '';
-					width: 100%;
-					height: 2px;
-					background-color: $darkgrey;
-					position: absolute;
-					left: 0;
-					bottom: 0;
-					transition: transform 0.25s ease-in-out;
-				}
-				&:hover::after {
-					transform: translateY(4px);
-				}
-			}
-
-			.list-item__inner {
-				width: 100%;
-				max-width: $max-width;
-				margin: 0 auto;
-				position: relative;
+			&::before {
+				content: counter(list-counter) '.';
+				counter-increment: list-counter;
+				position: absolute;
+				left: -3rem;
+				top: 0;
+				font-family: $title-stack;
+				font-size: 1rem;
+				line-height: 2.3rem;
 
 				@include media-query($on-mobile) {
-					width: 95%;
-					overflow-x: hidden;
-
-					p {
-						width: 100%;
-					}
-				}
-
-				&::before {
-					content: counter(quote-counter);
-					counter-increment: quote-counter;
-					position: absolute;
-					left: -3rem;
-					top: 0;
-					color: $red;
-					@include baseline(1);
-
-					@include media-query($on-mobile) {
-						position: static;
-						display: inline-block;
-					}
+					position: static;
+					display: inline-block;
 				}
 			}
+		}
+	}
 
-			.list-item__anchor {
-			    position: absolute;
-			    left: -3.2rem;
-			    top: 4.2rem;
-			    @include baseline(1);
-			    width: 1em;
+	ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0 0 $base-line-height 0;
 
-			    svg {
-			    	height: 1.4rem;
-			    	path {
-			    		fill: darken($almost-white, 20%);
-			    		transition: all 0.25s ease-in-out;
-			    	}
-			    }
+		li {
+			position: relative;
+			@include baseline(0);
 
-			    &:hover path {
-			    	fill: $darkgrey;
-			    }
-
-			    @include media-query($on-mobile) {
-			    	position: static;
-			    	display: inline-block;
-			    	margin-left: 1em;
-			    }
+			&::before {
+				content: '\2014';
+				position: absolute;
+				left: -3rem;
+				top: 0;
+				font-size: inherit;
+				line-height: inherit;
 			}
 		}
 	}

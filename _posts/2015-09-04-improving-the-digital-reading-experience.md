@@ -22,17 +22,19 @@ I will try to sketch out how to do this in the following **14 minutes** of text.
 	<a href="#the-humane-function-of-computers" id="js--beginTimer">BEGIN</a>
 </div>
 
-## 1. The humane function of computers
+## The humane function of computers
 
 The hammer is an extension of the hand. Glasses are an extension of the eye, the radio an extension of the ear. As long as our tools are recognizable as analogies of our body, the form and function of these tools are easily comprehensible.
 
-But once you enter the digital realm, analogies with our body break down. Instead, digital tools are analogies of analogies. Text editors are an analogy of type writers, type writers are an analogy of writing with pen and paper, writing with pen and paper is, initially, a substitute for our memory. In general the computer now works as an extension for our head controlling those tools.
+But once you enter the `digital realm`, analogies with our body break down. Instead, digital tools are analogies of analogies. Text editors are an analogy of type writers, type writers are an analogy of writing with pen and paper, writing with pen and paper is, initially, a substitute for our memory. In general the computer now works as an extension for our head controlling those tools.
 
 Steve Jobs claimed the computer should be "a bicycle for our mind." It's like computers add steampunk spider legs to our head.
 
-While some would agree with this image, what Jobs meant was obviously not that creepy. What the computer does (or should do) to our mind is what the bicycle does to our legs. The computer should be an empowering extension of our mind.
+While some would agree with this image, what Jobs meant was obviously not that creepy. What the computer does (or _should_ do) to our mind is what the bicycle does to our legs. The computer should be an empowering extension of our mind.
 
-But is it? Or do computers make us more like Spider Baby from Toy Story? What part of our mind is Twitter an extension of? What about Google Search? Is it in the nature of digital to break analogies?
+> But is it?
+
+Or do computers make us more like Spider Baby from Toy Story? What part of our mind is Twitter an extension of? What about Google Search? Is it in the nature of digital to break analogies?
 
 Blind abstraction, a lack of real-world analogies, the feeling that the workings are a black box, and the experience of multiple fast-paced, fragmented processes—this is more or less what we mean when we use the words "digital" to describe a device.
 
@@ -42,94 +44,108 @@ Documents, images, videos, and audio tracks on the web are not more or less real
 
 To design better software we need to build programs as extensions of our mental processes, supporting clear continuous thinking, instead of subduing our thoughts and actions to the opaque, fragmented technology that drives the device.
 
-## 2. Digital vs analog reading
+## Digital vs analog reading
 
-### 2.1 Reading in a browser
-Similar to the nervous landscape of Super Mario Bros., contemporary computers have different levels that change rapidly and require fast reflexes to cope. If you are reading online, you descend multiple levels to reach the text. For example:
+### Reading in a browser
+{: data-num="2.1"}
 
-* You sit down in front of a computer, becoming unaware of your body and your surroundings
-* You switch the computer on and start loosing track of time
-* You focus on the screen, framing your perception within a relatively small visual square that replaces your general perception
-* You enter the logic of the operating system, and your body/mind coordination reduces to your hand and eyes
-* You enter the browser and let go of the operating system's environment
-* You let go of the browser and focus on the functional structure of a website
-* You let go of the information architecture of the website and start reading
-* You then jump around between levels 4 and 7 until you stop reading in the browser
+Similar to the nervous landscape of <span class="mario">Super Mario Bros.</span>, contemporary computers have different levels that change rapidly and require fast reflexes to cope. If you are reading online, you descend multiple levels to reach the text. For example:
+
+1. You sit down in front of a computer, becoming unaware of your body and your surroundings
+2. You switch the computer on and start loosing track of time
+3. You focus on the screen, framing your perception within a relatively small visual square that replaces your general perception
+4. You enter the logic of the operating system, and your body/mind coordination reduces to your hand and eyes
+5. You enter the browser and let go of the operating system's environment
+6. You let go of the browser and focus on the functional structure of a website
+7. You let go of the information architecture of the website and start reading
+8. You then jump around between levels 4 and 7 until you stop reading in the browser
 
 If you compare the overall information architecture of a website to a book, you will notice that the difficulty in reading a digital text is not just a matter of all the synchronous processes, or the typographic design of digital text. Think about the number of frames of reference that you need to enter, the number of levels that you need to climb down—and the mindset that this climbing requires—until you reach a digital text. How much more complexity do you need once you reach the ultimate text layer? Why is it that once we reach the text, we hardly stay there for more than a couple of minutes?
 
-The reader gets constantly distracted by links, related content, navigation, blinking elements, and jumping icons in the dock. Instead of keeping readers in the continuity of the text, they are constantly ejected into a different level of Super Mario Land.
+The reader gets constantly distracted by links, related content, navigation, <span id="blink">blinking elements</span>, and jumping icons in the dock. Instead of keeping readers in the continuity of the text, they are constantly ejected into a different level of Super Mario Land.
 
-### 2.2 Reading a printed book
+### Reading a printed book
+{: data-num="2.2"}
+
 Just like a digital text, a printed text is embedded in different invisible frames through which you need to cross to get to the body text. There are various ways to embed text in a book, magazine or pamphlet. The following architecture of a book is, again, just an example:
 
-* The dust jacket or cover, with the title, author and edition
-* The back cover, with quotes and more information about the author and content
-* The dust jacket flaps, with more information about author and content, both in the front and back
-* One or more empty pages
-* Copyright information
-* An empty page
-* Author's dedication or quote
-* The title page
-* More empty pages
-* The table of contents (either at the front or back of the book)
-* An empty page
-* The title again
-* The preface
-* The title of the first chapter
-* The main text
-* Empty pages
-* The index
-* Empty pages
+1. The dust jacket or cover, with the title, author and edition
+1. The back cover, with quotes and more information about the author and content
+1. The dust jacket flaps, with more information about author and content, both in the front and back
+1. One or more empty pages
+1. Copyright information
+1. An empty page
+1. Author's dedication or quote
+1. The title page
+1. More empty pages
+1. The table of contents (either at the front or back of the book)
+1. An empty page
+1. The title again
+1. The preface
+1. The title of the first chapter
+1. The main text
+1. Empty pages
+1. The index
+1. Empty pages
 
 As you can see, books also have a series of levels or frames that we cross to get to the main text. Studying these layers it becomes clear that books are not as linear as they first appear—before opening a book many people look at the back cover, the dust jacket flaps, and the table of contents. But a well written book follows a pattern of continuity and clarity that is simpler and clearer that your average thought process.
 
 There are obvious differences between the overall architecture of a book and a website:
 
-In books the transitions between the different levels or frames are clearly separated with empty pages. They act like airlocks. You know when you enter a new level, and when you leave it.
-Books have a closed, complete content structure.
-They have a physical presence that illustrates this integrity.
-Once you are in the text, you reach a state of continuity comparable to your direct presence, bare of any distractions from the act of reading.
-The benefits of a linear, finite information architecture has been promoted again and again by old media publishers pitching their iPad apps. They posit (some would say hope) that the reader prefers the finite structure of a book, magazine or newspaper to the incomplete stream of information provided by the web. I cannot judge whether this is true or not. But this has proved to be a fairly weak argument so far.
+* In books the transitions between the different levels or frames are clearly separated with empty pages. They act like airlocks. You know when you enter a new level, and when you leave it.
+* Books have a closed, complete content structure.
+* They have a physical presence that illustrates this integrity.
+* Once you are in the text, you reach a state of continuity comparable to your direct presence, bare of any distractions from the act of reading.
 
-One thing is sure: it is harder to focus on a screen than on paper. Why? Is that because of the screen's digital DNA? Or is it because the software is badly designed? If the computer is a bicycle for our minds, why are we still wobbling? My guess is that bad software, not bad hardware, is to blame.
+The benefits of a linear, finite information architecture has been promoted again and again by old media publishers pitching their iPad apps. They posit (some would say _hope_) that the reader prefers the finite structure of a book, magazine or newspaper to the incomplete stream of information provided by the web. I cannot judge whether this is true or not. But this has proved to be a fairly weak argument so far.
 
-## 3. How to design better digital products
+One thing is sure: it is harder to focus on a screen than on paper. Why? Is that because of the screen's digital DNA? Or is it because the software is badly designed? If the computer is a bicycle for our minds, why are we still wobbling? My guess is that <span class="red">bad software, not bad hardware, is to blame</span>.
+
+## How to design better digital products
 
 To be able to design a better reading experience at the most basic level, we have to understand how to bring digital reading into a form of continuity. And to get there we need to find out what makes and breaks continuity.
 
-One way to make software look like a bicycle for our minds is skeuomorphism: making digital interfaces that look—but don't work—like analog tools. But beware. A digital book that looks like a physical hardcover but works like a video recorder will backfire. As Jan Tschichold wrote in Meisterbuch der Schrift (The Masterbook of Typography):
+One way to make software _look_ like a bicycle for our minds is skeuomorphism: making digital interfaces that look—but don't work—like analog tools. But beware. A digital book that looks like a physical hardcover but works like a video recorder will backfire. As Jan Tschichold wrote in Meisterbuch der Schrift (The Masterbook of Typography):
 
-> "What one wants but cannot achieve, becomes kitsch."
+> What one wants but cannot achieve, becomes kitsch.
+{: .quote}
 
-"Winnie The Pooh" in iBooks looks great in a TV spot for iPad, but as soon as you use it you know it's a fake print product. The information is forced into a structure that is not medium-appropriate, the interaction is painful, and the typography is random. Instead of studying and imitating the look of analog devices, we need to observe what our mind does when we use them.
+_Winnie the Pooh_ in iBooks looks great in a TV spot for iPad, but as soon as you use it you know it's a fake print product. The information is forced into a structure that is not medium-appropriate, the interaction is painful, and the typography is random. Instead of studying and imitating the look of analog devices, we need to observe what our mind does when we use them.
 
-### 3.1 Information Architecture
+### Information Architecture
+{: data-num="3.1"}
+
 Print and digital have a different mental model, and offer different content. If you look at a printed book you do not have the exact same thoughts as when you look at a file name. This becomes even more obvious if you just look at the printed artifact as an object:
 
 * A printed text can tell you in a glance where in the text you are, how much you have read, and how much is left to read
 * A printed text defines a pretty good spatial landscape to remember where in the book you read something
 * A printed text captures traces of where and when you read it
-* A digital text, on the other hand, has completely different strengths and weaknesses:
+
+A digital text, on the other hand, has completely different strengths and weaknesses:
+
 * It's easy to find a particular sentence
 * It can tell you how much time you spent with it, and how much time is left
 * It's hard to remember text location, but easy to work with text, e.g. sharing text highlights and taking notes
 * It can adapt to your personal needs and taste
 * While the printed text has been refined over centuries, the digital text is still young.
 
-### 3.2 Interaction Design
-Most reading interfaces are not based on the most basic User Interface principle: "Minimal input—maximal output." They are a result of a desired feature list. These features are then crammed into one interaction design.
+### Interaction Design
+{: data-num="3.2"}
+
+Most reading interfaces are not based on the most basic User Interface principle: <strong>Minimal input—maximal output.</strong> They are a result of a desired feature list. These features are then crammed into one interaction design.
 
 It is astonishing that, with all the high-pitched projects around reading in the last few years, nobody has developed an alternative navigational model for reading digital text. The main interaction models for digital reading are still flipping or scrolling. Both have their advantages and disadvantages, and both kind of suck on a tablet.
 
 We have been working behind the scenes on a better navigation model for long texts. For now, I'll just say this: As long as reading a book on a tablet requires more physical interaction than reading a printed book, tablets are not competitive reading devices. And, maybe even more importantly, for a long period of time texts were written for the specific shape of printed text. Isn't it more than probable that the shape of writing needs to adapt to the media it is consumed in?
 
-### 3.3 Surface Design
-Most digital books fail at the most basic level of the reading experience: typography. Good typography does not look nice to please type nerds. Primarily, well set type reads well. It captivates, leads along, and doesn't let you escape: it creates continuity.
+### Surface Design
+{: data-num="3.3"}
 
-The untrained eye won't see why a book with bad typesetting feels wrong, but everybody will feel that it feels wrong. "Winnie the Pooh" in iBooks is a tedious reading experience, but not because of bad pixel resolution. It's just as tedious on an iPad 3.
+Most digital books fail at the most basic level of the reading experience: typography. Good typography does not look nice to please type nerds. Primarily, well set type _reads well_. It captivates, leads along, and doesn't let you escape: it creates continuity.
 
-And it's not the missing paper smell either. Not because of the missing heft of the read versus unread pages. Reading "Winnie the Pooh" in iBooks is tedious first of all because no one took care of what constitutes the continuity of reading on the screen: how to set the type for optimal readability and legibility.
+The untrained eye won't see why a book with bad typesetting feels wrong, but everybody will _feel_ that it feels wrong. _Winnie the Pooh_ in iBooks is a tedious reading experience, but not because of bad pixel resolution. It's just as tedious on an iPad 3.
+
+And it's not the missing paper smell either. Not because of the missing heft of the read versus unread pages. Reading _Winnie the Pooh_ in iBooks is tedious first of all because no one took care of what constitutes the continuity of reading on the screen: how to set the type for optimal readability and legibility.
 
 In a well crafted book every single letter has its correct position in the whole of the text body to guarantee maximum readability and—through this—continuity of the reading experience. The text in e-books is set at random. Type size, line hight, leading, measure, contrast, and even font choice are left to the user, who usually has no clue about typesetting. Inevitably the text flows more or less randomly, rather than for the best reading experience, because of this.
 
@@ -143,7 +159,7 @@ What about the typeface itself? Current fonts were developed for low resolution,
 
 The downside with traditional fonts is that they are not always optimized for digital use. And there is also the question whether traditional fonts really perform perfectly on backlight screens, or whether there is not a new form of type that does the job better. I am still waiting for thorough scientific research on how fonts perform on these new display types. This will inform the creation of new digital fonts that are optimal for high density screens.
 
-## 4. Conclusion
+## Conclusion
 
 The computer is an extension of our mind. To design better software we need to build interfaces as extensions of our mental processes, rather than analogies of our body. Building better reading interfaces requires that we closely observe and rethink the way we read. While we need to find ways to navigate long texts on tablets, typography will continue to play the main role in the performance of a reading interface.
 
@@ -154,6 +170,10 @@ The technical challenges, information architecture, interaction design, and digi
 		clearTimeout(animateUpdate);
 		clearInterval(timerInterval);
 		delete progressBar
+	});
+
+	[].forEach.call(document.querySelectorAll('#js--beginTimer-wrapper ~ *'), function(e) {
+	    e.style.display = 'none';
 	});
 
 	var howManyMinutes= 14
