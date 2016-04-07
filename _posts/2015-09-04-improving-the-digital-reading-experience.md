@@ -151,13 +151,15 @@ The technical challenges, information architecture, interaction design, and digi
 
 <script>
 	document.querySelector('nav a').addEventListener('click', function() {
+		clearTimeout(animateUpdate);
 		clearInterval(timerInterval);
+		delete progressBar
 	});
 
 	var howManyMinutes= 14
 
 	var numMinutes    = 60 * howManyMinutes;
-	var timeoutVal	  = Math.floor(numMinutes/100);
+	var timeoutVal	  = Math.floor(numMinutes / 100);
 
 	function startTimer(duration, display) {
 	    var timer = duration, minutes, seconds;
@@ -173,12 +175,14 @@ The technical challenges, information architecture, interaction design, and digi
 	        if (--timer < 0) {
 	            timer = duration;
 	        }
-	        percentage = 1 - (timer/duration);
+	        percentage = 1 - (timer / duration);
 	        animateUpdate();
 	    }, 1000);
 	}
 	function updateProgress(percentage) {
-	    document.getElementById('progress').style.transform = "scaleX(" + percentage + ")";
+		if(progressBar) {
+		    progressBar.style.transform = "scaleX(" + percentage + ")";
+		}
 	}
 	function animateUpdate() {
 		if (percentage != 0) {
@@ -197,6 +201,11 @@ The technical challenges, information architecture, interaction design, and digi
 	    display = document.createElement('div');
 	    display.setAttribute('id', 'js--time');
 	    document.querySelector('.post').insertBefore(display, document.querySelector('.post__content'));
+
+	    progressBar = document.createElement('div');
+	    progressBar.style.transform = "scaleX(0)"
+	    progressBar.setAttribute('id', 'progress');
+	    document.querySelector('.post').insertBefore(progressBar, document.querySelector('.post__content'));
 
 	    startTimer(numMinutes, display);
 
