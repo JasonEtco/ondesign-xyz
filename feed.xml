@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Type-Texts</title>
+    <title>On Design</title>
     <description>Intelligent writings by brilliant people.</description>
-    <link>http://jasonet.co/</link>
-    <atom:link href="http://jasonet.co/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 06 Apr 2016 21:48:48 -0400</pubDate>
-    <lastBuildDate>Wed, 06 Apr 2016 21:48:48 -0400</lastBuildDate>
+    <link>http://ondesign.xyz/</link>
+    <atom:link href="http://ondesign.xyz/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 06 Apr 2016 21:58:20 -0400</pubDate>
+    <lastBuildDate>Wed, 06 Apr 2016 21:58:20 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -252,8 +252,8 @@
 
 </description>
         <pubDate>Fri, 04 Sep 2015 00:00:00 -0400</pubDate>
-        <link>http://jasonet.co/articles/incomplete-manifesto-for-growth/</link>
-        <guid isPermaLink="true">http://jasonet.co/articles/incomplete-manifesto-for-growth/</guid>
+        <link>http://ondesign.xyz/articles/incomplete-manifesto-for-growth/</link>
+        <guid isPermaLink="true">http://ondesign.xyz/articles/incomplete-manifesto-for-growth/</guid>
         
         
       </item>
@@ -476,8 +476,8 @@ The benefits of a linear, finite information architecture has been promoted agai
 
 </description>
         <pubDate>Fri, 04 Sep 2015 00:00:00 -0400</pubDate>
-        <link>http://jasonet.co/articles/improving-the-digital-reading-experience/</link>
-        <guid isPermaLink="true">http://jasonet.co/articles/improving-the-digital-reading-experience/</guid>
+        <link>http://ondesign.xyz/articles/improving-the-digital-reading-experience/</link>
+        <guid isPermaLink="true">http://ondesign.xyz/articles/improving-the-digital-reading-experience/</guid>
         
         
       </item>
@@ -520,8 +520,8 @@ The benefits of a linear, finite information architecture has been promoted agai
 
 </description>
         <pubDate>Fri, 04 Sep 2015 00:00:00 -0400</pubDate>
-        <link>http://jasonet.co/articles/i-hate-itc-garamond/</link>
-        <guid isPermaLink="true">http://jasonet.co/articles/i-hate-itc-garamond/</guid>
+        <link>http://ondesign.xyz/articles/i-hate-itc-garamond/</link>
+        <guid isPermaLink="true">http://ondesign.xyz/articles/i-hate-itc-garamond/</guid>
         
         
       </item>
