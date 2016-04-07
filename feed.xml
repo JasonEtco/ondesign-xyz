@@ -5,8 +5,8 @@
     <description>Intelligent writings by brilliant people.</description>
     <link>http://ondesign.xyz/</link>
     <atom:link href="http://ondesign.xyz/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 06 Apr 2016 21:58:20 -0400</pubDate>
-    <lastBuildDate>Wed, 06 Apr 2016 21:58:20 -0400</lastBuildDate>
+    <pubDate>Wed, 06 Apr 2016 23:30:07 -0400</pubDate>
+    <lastBuildDate>Wed, 06 Apr 2016 23:30:07 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -415,13 +415,15 @@ The benefits of a linear, finite information architecture has been promoted agai
 
 &lt;script&gt;
 	document.querySelector(&#39;nav a&#39;).addEventListener(&#39;click&#39;, function() {
+		clearTimeout(animateUpdate);
 		clearInterval(timerInterval);
+		delete progressBar
 	});
 
 	var howManyMinutes= 14
 
 	var numMinutes    = 60 * howManyMinutes;
-	var timeoutVal	  = Math.floor(numMinutes/100);
+	var timeoutVal	  = Math.floor(numMinutes / 100);
 
 	function startTimer(duration, display) {
 	    var timer = duration, minutes, seconds;
@@ -437,12 +439,14 @@ The benefits of a linear, finite information architecture has been promoted agai
 	        if (--timer &lt; 0) {
 	            timer = duration;
 	        }
-	        percentage = 1 - (timer/duration);
+	        percentage = 1 - (timer / duration);
 	        animateUpdate();
 	    }, 1000);
 	}
 	function updateProgress(percentage) {
-	    document.getElementById(&#39;progress&#39;).style.transform = &quot;scaleX(&quot; + percentage + &quot;)&quot;;
+		if(progressBar) {
+		    progressBar.style.transform = &quot;scaleX(&quot; + percentage + &quot;)&quot;;
+		}
 	}
 	function animateUpdate() {
 		if (percentage != 0) {
@@ -461,6 +465,11 @@ The benefits of a linear, finite information architecture has been promoted agai
 	    display = document.createElement(&#39;div&#39;);
 	    display.setAttribute(&#39;id&#39;, &#39;js--time&#39;);
 	    document.querySelector(&#39;.post&#39;).insertBefore(display, document.querySelector(&#39;.post__content&#39;));
+
+	    progressBar = document.createElement(&#39;div&#39;);
+	    progressBar.style.transform = &quot;scaleX(0)&quot;
+	    progressBar.setAttribute(&#39;id&#39;, &#39;progress&#39;);
+	    document.querySelector(&#39;.post&#39;).insertBefore(progressBar, document.querySelector(&#39;.post__content&#39;));
 
 	    startTimer(numMinutes, display);
 
