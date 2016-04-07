@@ -49,7 +49,7 @@ Cool is conservative fear dressed in black. Free yourself from limits of this so
 15. ## Ask stupid questions.
 Growth is fueled by desire and innocence. Assess the answer, not the question. Imagine learning throughout your life at the rate of an infant.
 
-16. ## Collaborate.
+16. ## Collab<span id="orate">orate.</span>
 The space between people working together is filled with conflict, friction, strife, exhilaration, delight, and vast creative potential.
 
 17. ## ____________________.

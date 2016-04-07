@@ -113,6 +113,17 @@
 		content: counter(quote-counter) "?";
 	}
 
+	// 16. Collaborate.
+	li:nth-child(16) #orate {
+		display: inline-block;
+		animation: orate 1s cubic-bezier(1, 0, 0.5, 0.5) infinite alternate;
+	}
+
+	@keyframes orate {
+		0% {transform: translateX(0)}
+		100% {transform: translateX(2em)}
+	}
+
 	// 17. _______.
 	li:nth-child(17) {
 		color: darken($almost-white, 10%);
@@ -128,6 +139,16 @@
 	li:nth-child(22) {
 		counter-increment: quote-counter -1;
 	} // Following the "clone" increment, increase nth-child by 1
+
+	// 25. Don't clean your desk.
+	li:nth-child(26) h2 {
+		animation: clean-down 1s ease-in-out infinite alternate;
+	}
+
+	@keyframes clean-down {
+		0% {transform: translateY(2em)}
+		100% {transform: translateY(0)}
+	}
 
 	// 27. Read only left-hand pages.
 	li:nth-child(28) {
@@ -164,6 +185,16 @@
 			&:hover path {
 				fill: darken($almost-white, 20%)
 			}
+		}
+	}
+	
+	// 41. Laugh.
+	li:nth-child(42) h2 {
+		animation: laugh 0.2s ease-in-out infinite alternate;
+
+		@keyframes laugh {
+			0% {transform: rotate(15deg)}
+			100% {transform: rotate(-15deg)}
 		}
 	}
 }
