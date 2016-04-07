@@ -185,6 +185,7 @@
 		position: absolute;
 		top: -1em;
 		left: -4.5rem;
+		line-height: initial;
 	}
 
 	// 12. Keep moving.
@@ -262,6 +263,18 @@
 		& .list-item__inner:hover p {
 			background: none;
 		}		
+	}
+
+	// 38. Explore the other edge.
+	li:nth-child(39) {
+		h2 {
+			position: absolute;
+			right: 0;
+		}
+		p {
+			position: relative;
+			top: 4rem;
+		}
 	}
 
 	// 39. Coffee breaks, cab rides, green rooms.
