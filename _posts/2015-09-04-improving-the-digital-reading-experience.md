@@ -166,75 +166,75 @@ The computer is an extension of our mind. To design better software we need to b
 The technical challenges, information architecture, interaction design, and digital typography are complex and tough. But if our goal is to build digital reading interfaces that improve the efficiency of our reading experience as much as the bicycle improved the efficiency of our legs, we have to not just optimize screen typography and type design, but rethink reading and writing from inside out.
 
 <script>
-	// document.querySelector('nav a').addEventListener('click', function() {
-	// 	clearTimeout(animateUpdate);
-	// 	clearInterval(timerInterval);
-	// 	delete progressBar
-	// });
+	document.querySelector('nav a').addEventListener('click', function() {
+		clearTimeout(animateUpdate);
+		clearInterval(timerInterval);
+		delete progressBar
+	});
 
-	// [].forEach.call(document.querySelectorAll('#js--beginTimer-wrapper ~ *'), function(e) {
-	//     e.style.display = 'none';
-	// });
+	[].forEach.call(document.querySelectorAll('#js--beginTimer-wrapper ~ *'), function(e) {
+	    e.style.display = 'none';
+	});
 
-	// var howManyMinutes= 14
+	var howManyMinutes= 14
 
-	// var numMinutes    = 60 * howManyMinutes;
-	// var timeoutVal	  = Math.floor(numMinutes / 100);
+	var numMinutes    = 60 * howManyMinutes;
+	var timeoutVal	  = Math.floor(numMinutes / 100);
 
-	// function startTimer(duration, display) {
-	//     var timer = duration, minutes, seconds;
-	//     timerInterval = setInterval(function () {
-	//         minutes = parseInt(timer / 60, 10)
-	//         seconds = parseInt(timer % 60, 10);
+	function startTimer(duration, display) {
+	    var timer = duration, minutes, seconds;
+	    timerInterval = setInterval(function () {
+	        minutes = parseInt(timer / 60, 10)
+	        seconds = parseInt(timer % 60, 10);
 
-	//         minutes = minutes < 10 ? "0" + minutes : minutes;
-	//         seconds = seconds < 10 ? "0" + seconds : seconds;
+	        minutes = minutes < 10 ? "0" + minutes : minutes;
+	        seconds = seconds < 10 ? "0" + seconds : seconds;
 
-	//         display.textContent = minutes + ":" + seconds;
+	        display.textContent = minutes + ":" + seconds;
 
-	//         if (--timer < 0) {
-	//             timer = duration;
-	//         }
-	//         percentage = 1 - (timer / duration);
-	//         animateUpdate();
-	//     }, 1000);
-	// }
-	// function updateProgress(percentage) {
-	// 	if(progressBar) {
-	// 	    progressBar.style.transform = "scaleX(" + percentage + ")";
-	// 	}
-	// }
-	// function animateUpdate() {
-	// 	if (percentage != 0) {
-	// 		updateProgress(percentage);
-	// 		setTimeout(animateUpdate, timeoutVal);
-	// 	} else {
-	// 		clearInterval(timerInterval);
-	// 		document.getElementById('improving-the-digital-reading-experience').classList.add('complete');
-	// 	}
-	// }
+	        if (--timer < 0) {
+	            timer = duration;
+	        }
+	        percentage = 1 - (timer / duration);
+	        animateUpdate();
+	    }, 1000);
+	}
+	function updateProgress(percentage) {
+		if(progressBar) {
+		    progressBar.style.transform = "scaleX(" + percentage + ")";
+		}
+	}
+	function animateUpdate() {
+		if (percentage != 0) {
+			updateProgress(percentage);
+			setTimeout(animateUpdate, timeoutVal);
+		} else {
+			clearInterval(timerInterval);
+			document.getElementById('improving-the-digital-reading-experience').classList.add('complete');
+		}
+	}
 
-	// // Button Event Listener
-	// var beginButton = document.getElementById('js--beginTimer');
-	// beginButton.addEventListener('click', function () {
+	// Button Event Listener
+	var beginButton = document.getElementById('js--beginTimer');
+	beginButton.addEventListener('click', function () {
 
-	//     display = document.createElement('div');
-	//     display.setAttribute('id', 'js--time');
-	//     document.querySelector('.post').insertBefore(display, document.querySelector('.post__content'));
+	    display = document.createElement('div');
+	    display.setAttribute('id', 'js--time');
+	    document.querySelector('.post').insertBefore(display, document.querySelector('.post__content'));
 
-	//     progressBar = document.createElement('div');
-	//     progressBar.style.transform = "scaleX(0)"
-	//     progressBar.setAttribute('id', 'progress');
-	//     document.querySelector('.post').insertBefore(progressBar, document.querySelector('.post__content'));
+	    progressBar = document.createElement('div');
+	    progressBar.style.transform = "scaleX(0)"
+	    progressBar.setAttribute('id', 'progress');
+	    document.querySelector('.post').insertBefore(progressBar, document.querySelector('.post__content'));
 
-	//     startTimer(numMinutes, display);
+	    startTimer(numMinutes, display);
 
-	//     var elems = document.querySelectorAll("#js--beginTimer-wrapper ~ *:not(script)");
-	//     [].forEach.call(elems, function(e) {
- //            e.style.display = 'block';
- //        });
-	//     beginButton.style.display = 'none';
+	    var elems = document.querySelectorAll("#js--beginTimer-wrapper ~ *:not(script)");
+	    [].forEach.call(elems, function(e) {
+            e.style.display = 'block';
+        });
+	    beginButton.style.display = 'none';
 
-	//     orphanCrippler(document.querySelectorAll('#{{ page.title | slugify: "pretty" }} li'))
-	// });
+	    orphanCrippler(document.querySelectorAll('#{{ page.title | slugify: "pretty" }} li'))
+	});
 </script>
