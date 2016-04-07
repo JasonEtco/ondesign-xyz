@@ -1,9 +1,9 @@
 # Site settings
-title: Type-Texts
+title: On Design
 email: jasonetco@gmail.com
 description: "Intelligent writings by brilliant people."
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://jasonet.co" # the base hostname & protocol for your site
+url: "http://ondesign.xyz" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
@@ -17,7 +17,9 @@ exclude: [
 	node_modules/,
 	package.json,
 	README.md,
-	LICENSE
+	LICENSE.,
+  type-texts.sublime-project,
+  type-texts.sublime-workspace
 ]
 
 sass:
