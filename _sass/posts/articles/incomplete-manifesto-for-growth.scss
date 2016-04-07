@@ -19,6 +19,8 @@
 				padding: 0;
 			}
 
+			&::before {content: none;}
+
 			h2 a {
 				color: inherit;
 				position: relative;
