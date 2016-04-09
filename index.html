@@ -8,8 +8,8 @@ layout: default
 		        
 		        <article class="home__article">
 		            <a href="{{ post.url }}" class="home__link">
-						<h2 class="home__title scene-element scene-element--fade-in-down" style="animation-delay: {{ forloop.index | times: 0.25 }}s;">{{ post.title }}</h2>
-						<h3 class="home__author scene-element scene-element--fade-in-down" style="animation-delay: {{ forloop.index | times: 0.25 | plus: 0.1 }}s;">{{ post.author }}</h3>
+						<h2 class="home__title scene-element scene-element--fade-in-down" style="animation-delay: {{ forloop.index | times: 200 }}ms;">{{ post.title }}</h2>
+						<h3 class="home__author scene-element scene-element--fade-in-down" style="animation-delay: {{ forloop.index | times: 200 | plus: 120 }}ms;">{{ post.author }}</h3>
 		            </a>
 		        </article>
 
