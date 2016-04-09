@@ -20,6 +20,7 @@
 		width: 100%;
 		background-color: $red;
 		position: fixed;
+		z-index: 99;
 		bottom: 0;
 		left: 0;
 		transform: scaleX(0);
@@ -28,7 +29,7 @@
 	}
 
 	.too-late {
-		display: none;
+		display: none !important;
 
 		&__refresh {
 			color: $red;
@@ -94,8 +95,15 @@
 
 				@include media-query($on-mobile) {
 					position: static;
-					display: inline-block;
+					display: block;
 				}
+			}
+
+			@include media-query($on-mobile) {
+				line-height: 2rem;
+				margin: 0 auto 2rem auto;
+				display: block;
+				width: 95%;
 			}
 		}
 
@@ -114,7 +122,15 @@
 				@include media-query($on-mobile) {
 					position: static;
 					display: inline-block;
+					margin-right: 0.6em;
 				}
+			}
+
+			@include media-query($on-mobile) {
+				line-height: 2rem;
+				margin: 0 auto 2rem auto;
+				display: block;
+				width: 95%;
 			}
 		}
 	}
@@ -130,6 +146,7 @@
 	blockquote.quote p {
 		position: relative;
 		display: inline-block;
+		line-height: $base-line-height;
 
 		&::before, &::after {
 			position: absolute;
@@ -137,6 +154,11 @@
 			font-size: 4rem;
 			line-height: initial;
 			top: 0.1em;
+
+			@include media-query($on-mobile) {
+				font-size: 1.4rem;
+				position: static;
+			}
 		}
 		&::before {
 			content: "\201C";

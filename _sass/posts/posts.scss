@@ -48,6 +48,7 @@
 	ol {
 		list-style-type: none;
 		counter-reset: list-counter;
+
 		li {
 			@include baseline(0);
 			position: relative;
@@ -63,10 +64,16 @@
 				line-height: 2.3rem;
 
 				@include media-query($on-mobile) {
-					position: static;
-					display: inline-block;
+					left: -2rem;
 				}
 			}
+		}
+
+		@include media-query($on-mobile) {
+			padding-left: 2em;
+			width: 95%;
+			margin: 0 auto 2rem auto;
+			box-sizing: border-box;
 		}
 	}
 
@@ -86,7 +93,18 @@
 				top: 0;
 				font-size: inherit;
 				line-height: inherit;
+
+				@include media-query($on-mobile) {
+					left: -2rem;
+				}
 			}
+		}
+
+		@include media-query($on-mobile) {
+			padding-left: 2em;
+			width: 95%;
+		    margin: 0 auto 2rem auto;
+			box-sizing: border-box;
 		}
 	}
 }

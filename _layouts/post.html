@@ -10,14 +10,8 @@ layout: default
 		<h3 class="post__author">Written by {{ page.author }}{% if page.copyright %} &mdash; {{ page.copyright }}{% endif %}</h3>
 	</header>
 	
-	<div id="js--time"></div>
-
 	<div class="post__content scene-element scene-element--fade-in-up" itemprop="articleBody">
 		{{ content }}
 	</div>
 
-	<div id="progress"></div>
-
 </article>
-
-{% include footer.html %}
