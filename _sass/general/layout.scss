@@ -37,3 +37,64 @@ p {
 		width: 95%;
 	}
 }
+
+.first-time {
+	&-modal {
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 9999;
+
+		background-color: rgba($red, 0.8);
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		opacity: 1;
+		visibility: visible;
+
+		transition: all 0.5s;
+		transition-delay: 0s;
+
+		&.first-time--closed {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+	&__inner {
+		background-color: $almost-white;
+		max-width: 500px;
+		padding: $base-line-height;
+
+		@include baseline(0);
+		text-align: center;
+
+		h1 {
+			margin: 0 0 1em 0;
+			line-height: initial;
+		}
+	}
+
+	&__close {
+		@include baseline(-1);
+		font-family: $accent-stack;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: $red;
+		background-color: transparent;
+		border: 2px solid $red;
+		padding: 0 1em;
+		display: block;
+		margin: $base-line-height auto 0 auto;
+		transition: all 0.25s;
+
+		&:hover {
+			background-color: $red;
+			color: $almost-white;
+		}
+	}
+}
