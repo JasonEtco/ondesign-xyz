@@ -31,6 +31,8 @@
 	.too-late {
 		display: none !important;
 
+		&::before {content: '' !important}
+
 		&__refresh {
 			color: $red;
 			position: relative;
@@ -178,16 +180,5 @@
 	}
 	#blink {
 		animation: blink 0.5s ease-in-out infinite;
-	}
-
-	@keyframes mario {
-		0% {transform: translateY(0);}
-		50% {transform: translateY(-16px);}
-		10% {transform: translateY(0);}
-	}
-	.mario {
-		display: inline-block;
-		animation: mario 1s cubic-bezier(1,-0.6, 0.5, 0.8) infinite;
-		color: $red;
 	}
 }

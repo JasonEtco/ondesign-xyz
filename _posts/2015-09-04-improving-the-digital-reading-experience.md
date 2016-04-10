@@ -4,8 +4,6 @@ title: Improving the Digital Reading Experience
 author: Information Architects
 copyright: Originally posted <a href="https://ia.net/know-how/improving-the-digital-reading-experience" target="_blank">here</a>.
 ---
-<h2 class="too-late">I'm sorry, but you weren't able to complete this article in time. <a class="too-late__refresh" href="javascript:location.reload()">Refresh to try again.</a></h2>
-
 There is a difference between checking Google Maps on your iPhone and asking a stranger for directions. It matters whether you listened to Beethoven's 9th in a concert hall or in your living room, whether it plays from a vinyl LP or from your iPod. King Lear is not the same experience when seen at the theatre, studied on paper, or scanned on a Kindle.
 
 It is not always easy to discern digital and analog experiences. A lot of seemingly analog devices have digital technology built in without us realizing it (tape decks, ovens, cars), and, as you might have noticed, more and more digital devices try to look and feel like analog tools.
@@ -49,7 +47,7 @@ To design better software we need to build programs as extensions of our mental 
 ### Reading in a browser
 {: data-num="2.1"}
 
-Similar to the nervous landscape of <span class="mario">Super Mario Bros.</span>, contemporary computers have different levels that change rapidly and require fast reflexes to cope. If you are reading online, you descend multiple levels to reach the text. For example:
+Similar to the nervous landscape of <span class="red">Super Mario Bros.</span>, contemporary computers have different levels that change rapidly and require fast reflexes to cope. If you are reading online, you descend multiple levels to reach the text. For example:
 
 1. You sit down in front of a computer, becoming unaware of your body and your surroundings
 2. You switch the computer on and start loosing track of time
@@ -165,18 +163,53 @@ The computer is an extension of our mind. To design better software we need to b
 
 The technical challenges, information architecture, interaction design, and digital typography are complex and tough. But if our goal is to build digital reading interfaces that improve the efficiency of our reading experience as much as the bicycle improved the efficiency of our legs, we have to not just optimize screen typography and type design, but rethink reading and writing from inside out.
 
+
+
+
+
 <script>
+	var postWrapper = document.getElementById('improving-the-digital-reading-experience');
+	var postContent = document.querySelector('.post__content');
+
 	document.querySelector('nav a').addEventListener('click', function() {
 		clearTimeout(animateUpdate);
 		clearInterval(timerInterval);
 		delete progressBar
 	});
 
-	[].forEach.call(document.querySelectorAll('#js--beginTimer-wrapper ~ *'), function(e) {
-	    e.style.display = 'none';
-	});
 
-	var howManyMinutes= 14
+
+	/*
+		Too Late Message
+	*/
+
+	var tooLate = document.createElement('h2');
+		tooLate.classList.add('too-late');
+		tooLate.innerHTML = "I'm sorry, but you weren't able to complete this article in time. "
+
+	var refresh = document.createElement('a');
+		refresh.classList.add('too-late__refresh');
+		refresh.innerHTML = "Refresh to try again.";
+		refresh.href = "javascript:location.reload();"
+		tooLate.appendChild(refresh);
+
+
+
+	/*
+		Hide everything passed button
+	*/
+
+	for (var i = document.querySelectorAll('#js--beginTimer-wrapper ~ *').length - 1; i >= 0; i--) {
+		document.querySelectorAll('#js--beginTimer-wrapper ~ *')[i].style.display = 'none';
+	}
+
+
+
+	/*
+		Timer
+	*/
+
+	var howManyMinutes= 0.1
 
 	var numMinutes    = 60 * howManyMinutes;
 	var timeoutVal	  = Math.floor(numMinutes / 100);
@@ -202,6 +235,7 @@ The technical challenges, information architecture, interaction design, and digi
 	function updateProgress(percentage) {
 		if(progressBar) {
 		    progressBar.style.transform = "scaleX(" + percentage + ")";
+		    progressBar.style.webkitTransform = "scaleX(" + percentage + ")";
 		}
 	}
 	function animateUpdate() {
@@ -210,29 +244,39 @@ The technical challenges, information architecture, interaction design, and digi
 			setTimeout(animateUpdate, timeoutVal);
 		} else {
 			clearInterval(timerInterval);
-			document.getElementById('improving-the-digital-reading-experience').classList.add('complete');
+			postWrapper.classList.add('complete');
+			postContent.insertBefore(tooLate, postContent.firstChild);
+			progressBar.style.display = 'none';
 		}
 	}
 
-	// Button Event Listener
+
+
+	/*
+		Button Event Listener
+	*/
+
 	var beginButton = document.getElementById('js--beginTimer');
 	beginButton.addEventListener('click', function () {
 
 	    display = document.createElement('div');
 	    display.setAttribute('id', 'js--time');
-	    document.querySelector('.post').insertBefore(display, document.querySelector('.post__content'));
+	    document.querySelector('.post').insertBefore(display, postContent);
 
 	    progressBar = document.createElement('div');
+	    
 	    progressBar.style.transform = "scaleX(0)"
+	    progressBar.style.webkitTransform = "scaleX(0)"
+	    
 	    progressBar.setAttribute('id', 'progress');
-	    document.querySelector('.post').insertBefore(progressBar, document.querySelector('.post__content'));
+	    document.querySelector('.post').insertBefore(progressBar, postContent);
 
 	    startTimer(numMinutes, display);
 
 	    var elems = document.querySelectorAll("#js--beginTimer-wrapper ~ *:not(script)");
-	    [].forEach.call(elems, function(e) {
-            e.style.display = 'block';
-        });
+	    for (var i = elems.length - 1; i >= 0; i--) {
+	    	elems[i].style.display = 'block';
+	    }
 	    beginButton.style.display = 'none';
 
 	    orphanCrippler(document.querySelectorAll('#{{ page.title | slugify: "pretty" }} li'))

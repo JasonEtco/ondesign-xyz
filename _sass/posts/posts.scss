@@ -48,6 +48,7 @@
 	ol {
 		list-style-type: none;
 		counter-reset: list-counter;
+		padding: 0;
 
 		li {
 			@include baseline(0);
@@ -57,14 +58,16 @@
 				content: counter(list-counter) '.';
 				counter-increment: list-counter;
 				position: absolute;
-				left: -3rem;
+				left: -5rem;
 				top: 0;
 				font-family: $title-stack;
 				font-size: 1rem;
 				line-height: 2.3rem;
+				width: 3em;
+				text-align: right;
 
 				@include media-query($on-mobile) {
-					left: -2rem;
+					left: -4rem;
 				}
 			}
 		}
