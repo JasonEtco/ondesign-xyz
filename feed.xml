@@ -5,8 +5,8 @@
     <description>Intelligent writings by brilliant people.</description>
     <link>http://ondesign.xyz/</link>
     <atom:link href="http://ondesign.xyz/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 09 Apr 2016 19:19:53 -0400</pubDate>
-    <lastBuildDate>Sat, 09 Apr 2016 19:19:53 -0400</lastBuildDate>
+    <pubDate>Sat, 09 Apr 2016 22:27:01 -0400</pubDate>
+    <lastBuildDate>Sat, 09 Apr 2016 22:27:01 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -260,9 +260,7 @@
     
       <item>
         <title>Improving the Digital Reading Experience</title>
-        <description>&lt;h2 class=&quot;too-late&quot;&gt;I&#39;m sorry, but you weren&#39;t able to complete this article in time. &lt;a class=&quot;too-late__refresh&quot; href=&quot;javascript:location.reload()&quot;&gt;Refresh to try again.&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;There is a difference between checking Google Maps on your iPhone and asking a stranger for directions. It matters whether you listened to Beethoven’s 9th in a concert hall or in your living room, whether it plays from a vinyl LP or from your iPod. King Lear is not the same experience when seen at the theatre, studied on paper, or scanned on a Kindle.&lt;/p&gt;
+        <description>&lt;p&gt;There is a difference between checking Google Maps on your iPhone and asking a stranger for directions. It matters whether you listened to Beethoven’s 9th in a concert hall or in your living room, whether it plays from a vinyl LP or from your iPod. King Lear is not the same experience when seen at the theatre, studied on paper, or scanned on a Kindle.&lt;/p&gt;
 
 &lt;p&gt;It is not always easy to discern digital and analog experiences. A lot of seemingly analog devices have digital technology built in without us realizing it (tape decks, ovens, cars), and, as you might have noticed, more and more digital devices try to look and feel like analog tools.&lt;/p&gt;
 
@@ -306,7 +304,7 @@
 
 &lt;h3 data-num=&quot;2.1&quot; id=&quot;reading-in-a-browser&quot;&gt;Reading in a browser&lt;/h3&gt;
 
-&lt;p&gt;Similar to the nervous landscape of &lt;span class=&quot;mario&quot;&gt;Super Mario Bros.&lt;/span&gt;, contemporary computers have different levels that change rapidly and require fast reflexes to cope. If you are reading online, you descend multiple levels to reach the text. For example:&lt;/p&gt;
+&lt;p&gt;Similar to the nervous landscape of &lt;span class=&quot;red&quot;&gt;Super Mario Bros.&lt;/span&gt;, contemporary computers have different levels that change rapidly and require fast reflexes to cope. If you are reading online, you descend multiple levels to reach the text. For example:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;You sit down in front of a computer, becoming unaware of your body and your surroundings&lt;/li&gt;
@@ -430,17 +428,48 @@
 &lt;p&gt;The technical challenges, information architecture, interaction design, and digital typography are complex and tough. But if our goal is to build digital reading interfaces that improve the efficiency of our reading experience as much as the bicycle improved the efficiency of our legs, we have to not just optimize screen typography and type design, but rethink reading and writing from inside out.&lt;/p&gt;
 
 &lt;script&gt;
+	var postWrapper = document.getElementById(&#39;improving-the-digital-reading-experience&#39;);
+	var postContent = document.querySelector(&#39;.post__content&#39;);
+
 	document.querySelector(&#39;nav a&#39;).addEventListener(&#39;click&#39;, function() {
 		clearTimeout(animateUpdate);
 		clearInterval(timerInterval);
 		delete progressBar
 	});
 
-	[].forEach.call(document.querySelectorAll(&#39;#js--beginTimer-wrapper ~ *&#39;), function(e) {
-	    e.style.display = &#39;none&#39;;
-	});
 
-	var howManyMinutes= 14
+
+	/*
+		Too Late Message
+	*/
+
+	var tooLate = document.createElement(&#39;h2&#39;);
+		tooLate.classList.add(&#39;too-late&#39;);
+		tooLate.innerHTML = &quot;I&#39;m sorry, but you weren&#39;t able to complete this article in time. &quot;
+
+	var refresh = document.createElement(&#39;a&#39;);
+		refresh.classList.add(&#39;too-late__refresh&#39;);
+		refresh.innerHTML = &quot;Refresh to try again.&quot;;
+		refresh.href = &quot;javascript:location.reload();&quot;
+		tooLate.appendChild(refresh);
+
+
+
+	/*
+		Hide everything passed button
+	*/
+
+	for (var i = document.querySelectorAll(&#39;#js--beginTimer-wrapper ~ *&#39;).length - 1; i &gt;= 0; i--) {
+		document.querySelectorAll(&#39;#js--beginTimer-wrapper ~ *&#39;)[i].style.display = &#39;none&#39;;
+	}
+
+
+
+	/*
+		Timer
+	*/
+
+	var howManyMinutes= 0.1
 
 	var numMinutes    = 60 * howManyMinutes;
 	var timeoutVal	  = Math.floor(numMinutes / 100);
@@ -466,6 +495,7 @@
 	function updateProgress(percentage) {
 		if(progressBar) {
 		    progressBar.style.transform = &quot;scaleX(&quot; + percentage + &quot;)&quot;;
+		    progressBar.style.webkitTransform = &quot;scaleX(&quot; + percentage + &quot;)&quot;;
 		}
 	}
 	function animateUpdate() {
@@ -474,29 +504,39 @@
 			setTimeout(animateUpdate, timeoutVal);
 		} else {
 			clearInterval(timerInterval);
-			document.getElementById(&#39;improving-the-digital-reading-experience&#39;).classList.add(&#39;complete&#39;);
+			postWrapper.classList.add(&#39;complete&#39;);
+			postContent.insertBefore(tooLate, postContent.firstChild);
+			progressBar.style.display = &#39;none&#39;;
 		}
 	}
 
-	// Button Event Listener
+
+
+	/*
+		Button Event Listener
+	*/
+
 	var beginButton = document.getElementById(&#39;js--beginTimer&#39;);
 	beginButton.addEventListener(&#39;click&#39;, function () {
 
 	    display = document.createElement(&#39;div&#39;);
 	    display.setAttribute(&#39;id&#39;, &#39;js--time&#39;);
-	    document.querySelector(&#39;.post&#39;).insertBefore(display, document.querySelector(&#39;.post__content&#39;));
+	    document.querySelector(&#39;.post&#39;).insertBefore(display, postContent);
 
 	    progressBar = document.createElement(&#39;div&#39;);
+	    
 	    progressBar.style.transform = &quot;scaleX(0)&quot;
+	    progressBar.style.webkitTransform = &quot;scaleX(0)&quot;
+	    
 	    progressBar.setAttribute(&#39;id&#39;, &#39;progress&#39;);
-	    document.querySelector(&#39;.post&#39;).insertBefore(progressBar, document.querySelector(&#39;.post__content&#39;));
+	    document.querySelector(&#39;.post&#39;).insertBefore(progressBar, postContent);
 
 	    startTimer(numMinutes, display);
 
 	    var elems = document.querySelectorAll(&quot;#js--beginTimer-wrapper ~ *:not(script)&quot;);
-	    [].forEach.call(elems, function(e) {
-            e.style.display = &#39;block&#39;;
-        });
+	    for (var i = elems.length - 1; i &gt;= 0; i--) {
+	    	elems[i].style.display = &#39;block&#39;;
+	    }
 	    beginButton.style.display = &#39;none&#39;;
 
 	    orphanCrippler(document.querySelectorAll(&#39;#improving-the-digital-reading-experience li&#39;))
