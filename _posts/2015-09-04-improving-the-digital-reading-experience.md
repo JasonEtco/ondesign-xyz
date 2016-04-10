@@ -209,7 +209,7 @@ The technical challenges, information architecture, interaction design, and digi
 		Timer
 	*/
 
-	var howManyMinutes= 0.1
+	var howManyMinutes= 14
 
 	var numMinutes    = 60 * howManyMinutes;
 	var timeoutVal	  = Math.floor(numMinutes / 100);

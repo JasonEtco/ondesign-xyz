@@ -17,9 +17,9 @@ $(function(){
         // Add your CSS animation reversing class
         $container.addClass('is-exiting');
         
-        $body.animate({
-          scrollTop: 0
-        });
+        // $body.animate({
+        //   scrollTop: 0
+        // });
         
         // Restart your animation
         smoothState.restartCSSAnimations();
