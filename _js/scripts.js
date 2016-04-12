@@ -1,15 +1,18 @@
 start = function() {
 
-	var siteHeader = document.querySelector('.nav__wrapper');
-	var position   = window.pageYOffset;
+	var siteHeader  = document.querySelector('.nav__wrapper');
+	var position    = window.pageYOffset;
+	var body		= document.body;
 
 	if(siteHeader) {
 	    window.onscroll = function() {
 	    	var scroll = window.pageYOffset;
-		    if(scroll > position) {
-		        siteHeader.classList.add('js--site-header--hidden')
+	    	var atEnd  = body.offsetHeight + body.scrollTop == body.scrollHeight
+
+		    if(scroll < position || atEnd) {
+		        siteHeader.classList.remove('js--site-header--hidden')
 		    } else {
-		        siteHeader.classList.remove('js--site-header--hidden');
+		        siteHeader.classList.add('js--site-header--hidden');
 		    }
 		    position = scroll;
 	    }
@@ -17,7 +20,7 @@ start = function() {
 	    // Show grid background
 	    var gridButton = document.getElementById('js--gridButton');
 	    gridButton.addEventListener('click', function() {
-	    	document.body.classList.toggle('grid');
+	    	body.classList.toggle('grid');
 	    });
 	}
 
