@@ -115,11 +115,13 @@
 			&::before {
 				content: attr(data-num);
 				position: absolute;
-				left: -3rem;
+				left: -5rem;
 				top: 0;
 				color: $red;
 				font-family: $title-stack;
 				@include baseline(1);
+				width: 2em;
+			    text-align: right;
 
 				@include media-query($on-mobile) {
 					position: static;
@@ -155,7 +157,7 @@
 			color: $red;
 			font-size: 4rem;
 			line-height: initial;
-			top: 0.1em;
+			top: -0.2em;
 
 			@include media-query($on-mobile) {
 				font-size: 1.4rem;
