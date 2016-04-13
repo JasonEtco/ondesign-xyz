@@ -1,0 +1,55 @@
+.site-footer {
+	background-color: darken($almost-white, 10%);
+	font-family: $title-stack;
+	margin-top: $base-line-height * 4;
+	padding: $base-line-height 0 $base-line-height * 2 0;
+}
+
+.footer {
+	&__inner {
+		width: 95%;
+		max-width: $max-width;
+		margin: 0 auto;
+	}
+	&__form {
+		display: flex;
+		margin-top: $base-line-height;
+	}
+	&__fieldset {
+		border: none;
+		padding: 0;
+		margin: 0;
+		position: relative;
+		flex-grow: 2;
+	}
+	&__label {
+		position: absolute;
+		left: 1em;
+		top: 0;
+		z-index: 2;
+		transition: transform 0.25s ease-in-out;
+		@include baseline(-1);
+	}
+	&__input {
+		position: relative;
+		border: none;
+		padding: 0 0.4em;
+		width: 100%;
+		box-sizing: border-box;
+
+		@include baseline(0);
+
+		&:focus + label {
+			transform: translateY(-2rem);
+		}
+	}
+	&__submit {
+		border: none;
+		outline: none;
+		padding: 0 1em;
+		background-color: $red;
+		color: $almost-white;
+
+		@include baseline(-1);
+	}
+}
