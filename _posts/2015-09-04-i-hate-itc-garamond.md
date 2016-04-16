@@ -2,7 +2,7 @@
 layout: post
 title: I Hate ITC Garamond
 author: Michael Bierut
-copyright: Originally posted <a href="http://designobserver.com/article.php?id=2577" target="_blank">here.</a>
+copyright: Originally posted <a href="http://designobserver.com/article.php?id=2577" target="_blank">here</a>.
 ---
 My daughter Liz called me from college to recommend a book she had been assigned for a political science class: [Mr. Truman's War][1]{:target="_blank"} by J. Robert Moskin, a non-fiction account of the end of World War II and the dawn of the Cold War. On Amazon, I learned it was out of print, but she was so enthusiastic about it that I tracked down a used copy.
 
