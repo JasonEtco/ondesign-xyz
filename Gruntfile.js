@@ -101,8 +101,36 @@ module.exports = function(grunt) {
                     branch: 'gh-pages'
                 }
             }
-        }
+        },
 
+        jekyll_post: {
+            options: {
+              questions: [
+                {
+                  config: 'layout',
+                  message: 'Layout?',
+                  default: 'post'
+                },
+                {
+                  config: 'title',
+                  message: 'Title?',
+                  default: 'Your Default Title'
+                },
+                {
+                  config: 'author',
+                  message: 'Author?',
+                  default: 'Your Default Author'
+                },
+                {
+                  config: 'copyright',
+                  message: 'Copyright information?',
+                  default: 'Copyright Me'
+                }
+              ]
+            }
+          },
+
+        
     });
 
     grunt.loadNpmTasks('grunt-postcss');
@@ -110,36 +138,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-express');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-jekyll');
+    grunt.loadNpmTasks('grunt-jekyll-post');
     grunt.loadNpmTasks('grunt-build-control');
-
 
     grunt.registerTask('default', ['jekyll:working', 'uglify', 'postcss', 'express', 'watch']);
     grunt.registerTask('deploy',  ['jekyll:deploy', 'uglify', 'postcss', 'buildcontrol:pages']);
-
-    grunt.task.registerTask('post', 'Create new jekyll posts from templates.', function() {
-      var name = grunt.option('name'),
-          category = grunt.option('cat'),
-          date = new Date(),
-          today = grunt.template.date(date, 'yyyy-mm-dd'),
-          template,
-          formatedName,
-          data,
-          content;
-
-      if (name) {
-        formatedName = name.replace(/[^a-z0-9]|\s+|\r?\n|\r/gmi, '-').toLowerCase();
-        category = category ? category : 'blog';
-        data = {
-          name: name,
-        };
-        template = grunt.file.read('_post-template-' + category + '.md');
-        content = grunt.template.process(template, {
-          data: data
-        });
-        grunt.file.write('_posts/' + today + '-' + formatedName + '.md', content);
-      }
-      else {
-        grunt.fail.warn('Name Required: `grunt post --name "My Post Name"`');
-      }
-    });
+    grunt.registerTask('post', ['jekyll_post']);
 };
