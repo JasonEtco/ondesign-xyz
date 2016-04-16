@@ -19,15 +19,14 @@
 
 .home {
 
-	&__inner {
-
+	&__article {
+		margin: $base-line-height * 2 0;
 	}
 
 	&__link {
 		color: inherit;
 		text-decoration: none;
 		display: inline-block;
-		margin: 1rem 0;
 		transition: transform 0.25s ease-in-out;
 
 		&:hover {

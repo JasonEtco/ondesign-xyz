@@ -1,0 +1,53 @@
+---
+layout: default
+---
+{% include header.html %}
+
+<article class="post post--big-list" id="{{ page.title | slugify: 'pretty' }}" itemscope itemtype="http://schema.org/BlogPosting">
+
+	<header class="post__header scene-element scene-element--fade-in-up">
+		<h1 class="post__title" itemprop="name headline">{{ page.title }} &mdash;</h1>
+		<h3 class="post__author">Written by {{ page.author }}{% if page.copyright %} &mdash; {{ page.copyright }}{% endif %}</h3>
+	</header>
+	
+	<div class="post__content scene-element scene-element--fade-in-up" itemprop="articleBody">
+		{{ content }}
+	</div>
+
+	{% include footer.html %}
+
+</article>
+
+<script>
+	// Wrap list items in div.list-item__inner
+	wrapListItem = function(selector) {
+		var listItems = document.querySelectorAll(selector);
+
+		function wrapInner(parent, wrapper, attribute, attributevalue) {
+		    if (typeof wrapper === 'string') {
+		        wrapper = document.createElement(wrapper);
+		    }
+		    var div = parent.appendChild(wrapper).setAttribute(attribute, attributevalue);
+
+		    while (parent.firstChild !== wrapper) {
+		    	wrapper.appendChild(parent.firstChild);
+		    }
+		}
+
+		for (i = 0; i < listItems.length; i++) { 
+			current = listItems[i]
+			index = current.id = [i + 1];
+
+		    wrapInner(current, 'div', 'class', 'list-item__inner');
+
+		    var listAnchor = document.createElement('a');
+			listAnchor.classList.add('list-item__anchor');
+		    listAnchor.setAttribute('href', '#' + index);
+		    listAnchor.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 179.35 179.35"><path d="M170,154.18l-16.15,16a31.71,31.71,0,0,1-44.73-.22L86.49,147.26a31.42,31.42,0,0,1-9.12-22.31A32.17,32.17,0,0,1,87,102l-9.67-9.67a31.84,31.84,0,0,1-45.28.44L9.23,69.89a31.57,31.57,0,0,1,.11-44.73l16.15-16a31.71,31.71,0,0,1,44.73.22L92.86,32.09A31.42,31.42,0,0,1,102,54.4a32.17,32.17,0,0,1-9.67,23L102,87a31.84,31.84,0,0,1,45.28-.44l22.86,22.86A31.57,31.57,0,0,1,170,154.18ZM77.91,46.92L55.28,24.18A10.66,10.66,0,0,0,47.8,21.1a11,11,0,0,0-7.47,3l-16.15,16a10.48,10.48,0,0,0,0,14.84L47,77.8a10.55,10.55,0,0,0,7.47,3,10.32,10.32,0,0,0,7.91-3.41c-3.63-3.63-7.91-6.7-7.91-12.31A10.55,10.55,0,0,1,65.06,54.51c5.6,0,8.68,4.29,12.31,7.91A10.65,10.65,0,0,0,77.91,46.92Zm77.26,77.48-22.86-22.86a10.66,10.66,0,0,0-7.47-3.08,10.42,10.42,0,0,0-7.91,3.52c3.63,3.63,7.91,6.7,7.91,12.31a10.55,10.55,0,0,1-10.55,10.55c-5.6,0-8.68-4.29-12.31-7.91a10.65,10.65,0,0,0-.55,15.49l22.64,22.75a10.55,10.55,0,0,0,7.47,3,10.94,10.94,0,0,0,7.47-2.86l16.15-16A10.48,10.48,0,0,0,155.17,124.4Z" fill="#231f20"/></svg>';
+
+		    current.firstChild.insertBefore(listAnchor, current.firstChild.firstChild)
+		}
+	}
+
+	wrapListItem('#{{ page.title | slugify: "pretty" }} li');
+</script>

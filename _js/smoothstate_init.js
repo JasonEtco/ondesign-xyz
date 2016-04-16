@@ -2,7 +2,6 @@ $(document).ready(function() {
     start();
 });
 
-
 $(function(){
   'use strict';
   var $body    = $('html, body');

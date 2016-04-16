@@ -52,14 +52,14 @@ module.exports = function(grunt) {
                     '_sass/**/*.scss',
                     'css/*.scss'
                 ],
-                tasks: ['jekyll', 'uglify', 'postcss']
+                tasks: ['jekyll:working', 'uglify', 'postcss']
             },
 
             js: {
                 files: [
                     '_js/*.js'
                 ],
-                tasks: ['jekyll', 'uglify', 'postcss']
+                tasks: ['jekyll:working', 'uglify', 'postcss']
             },
 
             jekyll: {
@@ -72,7 +72,7 @@ module.exports = function(grunt) {
                     '*.md',
                     '!_site/**/*'
                 ],
-                tasks: ['jekyll', 'uglify', 'postcss']
+                tasks: ['jekyll:working', 'uglify', 'postcss']
             },
 
             options: {

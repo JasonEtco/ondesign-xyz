@@ -32,7 +32,6 @@ start = function() {
 	objs = document.querySelectorAll('.post__content p');
 	orphanCrippler(objs);
 
-
 	// Cookies
 	function setCookie(cname, cvalue, exdays) {
 	    var d = new Date();
