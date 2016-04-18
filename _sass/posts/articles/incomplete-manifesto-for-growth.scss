@@ -160,10 +160,18 @@
 		h2 {
 			position: absolute;
 			right: 0;
+
+			@include media-query($on-mobile) {
+				position: static;
+			}
 		}
 		p {
 			position: relative;
 			top: 4rem;
+
+			@include media-query($on-mobile) {
+				position: static;
+			}
 		}
 	}
 

@@ -14,9 +14,11 @@ layout: default
 		{{ content }}
 	</div>
 
-	{% include footer.html %}
+	{% include post-footer.html %}
 
 </article>
+
+{% include footer.html %}
 
 <script>
 	// Wrap list items in div.list-item__inner
@@ -48,6 +50,8 @@ layout: default
 		    current.firstChild.insertBefore(listAnchor, current.firstChild.firstChild)
 		}
 	}
-
-	wrapListItem('#{{ page.title | slugify: "pretty" }} li');
+	
+	if(!document.querySelector('.list-item__inner')) {
+		wrapListItem('#{{ page.title | slugify: "pretty" }} li');
+	}
 </script>

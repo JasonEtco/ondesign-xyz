@@ -80,7 +80,7 @@
 		}
 	}
 
-	ul {
+	> ul {
 		list-style-type: none;
 		padding: 0;
 		margin: 0 0 $base-line-height 0;
@@ -108,6 +108,36 @@
 			width: 95%;
 		    margin: 0 auto 2rem auto;
 			box-sizing: border-box;
+		}
+	}
+
+	&__footer {
+		margin: $base-line-height * 2 auto;
+		width: 95%;
+		max-width: $max-width;
+		position: relative;
+
+		font-family: $accent-stack;
+		font-weight: 500;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		color: $darkgrey;
+		@include baseline(-1);
+
+		a { color: $red; }
+
+		span {
+			display: block;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: -2rem;
+			left: 0;
+			width: 3rem;
+			height: 2px;
+			background-color: $red;
 		}
 	}
 }

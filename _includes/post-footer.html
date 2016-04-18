@@ -1,0 +1,18 @@
+<footer class="post__footer scene-element scene-element--fade-in-up">
+	
+	<span>Written by {{ page.author }}</span>
+
+	<span>Next article: 
+	{%if page.previous %}
+
+		<a href="{{ page.previous.url }}" class="post__footer__next">{{ page.previous.title }}</a> by {{ page.previous.author }}
+
+	{% else %} <!-- If last post, show data for most recent post -->
+
+		{% for post in site.posts limit:1 %}
+			<a href="{{ post.url }}" class="post__footer__next">{{ post.title }}</a> by {{ post.author }}
+		{% endfor %}
+		
+	{% endif %}
+	</span>
+</footer>
