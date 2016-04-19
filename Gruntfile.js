@@ -21,17 +21,6 @@ module.exports = function(grunt) {
             }
         },
 
-        express: {
-            all: {
-                options: {
-                    port: 4000,
-                    hostname: '0.0.0.0',
-                    bases: ['_site'],
-                    livereload: true
-                }
-            }
-        },
-
         postcss: {
           options: {
             processors: [
@@ -130,18 +119,30 @@ module.exports = function(grunt) {
             }
           },
 
+        browserSync: {
+            dev: {
+                bsFiles: {
+                    src : ['_site/css/*.css']
+                },
+                options: {
+                    watchTask: true,
+                    server: './_site'
+                }
+            }
+        }
+
         
     });
 
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-express');
+    grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-jekyll');
     grunt.loadNpmTasks('grunt-jekyll-post');
     grunt.loadNpmTasks('grunt-build-control');
 
-    grunt.registerTask('default', ['jekyll:working', 'uglify', 'postcss', 'express', 'watch']);
+    grunt.registerTask('default', ['jekyll:working', 'uglify', 'postcss', 'browserSync', 'watch']);
     grunt.registerTask('deploy',  ['jekyll:deploy', 'uglify', 'postcss', 'buildcontrol:pages']);
     grunt.registerTask('post', ['jekyll_post']);
 };

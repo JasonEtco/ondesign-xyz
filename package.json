@@ -17,10 +17,10 @@
   "devDependencies": {
     "autoprefixer": "latest",
     "grunt": "^0.4.5",
+    "grunt-browser-sync": "^2.2.0",
     "grunt-build-control": "latest",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest",
-    "grunt-express": "latest",
     "grunt-jekyll": "latest",
     "grunt-jekyll-post": "^0.1.2",
     "grunt-postcss": "latest",
