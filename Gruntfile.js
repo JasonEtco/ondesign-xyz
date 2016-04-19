@@ -122,7 +122,11 @@ module.exports = function(grunt) {
         browserSync: {
             dev: {
                 bsFiles: {
-                    src : ['_site/css/*.css']
+                    src : [
+                        'css/*.css',
+                        ' *.html',
+                        '**/*.html'
+                    ]
                 },
                 options: {
                     watchTask: true,
@@ -130,8 +134,7 @@ module.exports = function(grunt) {
                 }
             }
         }
-
-        
+       
     });
 
     grunt.loadNpmTasks('grunt-postcss');

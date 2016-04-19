@@ -17,9 +17,9 @@ exclude: [
 	node_modules/,
 	package.json,
 	README.md,
-	LICENSE.,
-  type-texts.sublime-project,
-  type-texts.sublime-workspace
+	LICENSE,
+  ondesign-xyz.sublime-project,
+  ondesign-xyz.sublime-workspace
 ]
 
 sass:
