@@ -139,41 +139,6 @@
 		}
 	}
 
-	.red { color: $red; }
-
-	code {
-		background-color: darken($almost-white, 10%);
-		padding: 0.2em 0.6em;
-		border-radius: 4px;
-	}
-
-	blockquote.quote p {
-		position: relative;
-		display: inline-block;
-		line-height: $base-line-height;
-
-		&::before, &::after {
-			position: absolute;
-			color: $red;
-			font-size: 4rem;
-			line-height: initial;
-			top: -0.2em;
-
-			@include media-query($on-mobile) {
-				font-size: 1.4rem;
-				position: static;
-			}
-		}
-		&::before {
-			content: "\201C";
-			left: -3rem;
-		}
-		&::after {
-			content: "\201D";
-			right: -3rem;
-		}
-	}
-
 	// DETAILS
 	@keyframes blink {
 		0% {opacity: 1;}

@@ -93,30 +93,28 @@ module.exports = function(grunt) {
         },
 
         jekyll_post: {
-            options: {
-              questions: [
-                {
-                  config: 'layout',
-                  message: 'Layout?',
-                  default: 'post'
-                },
-                {
-                  config: 'title',
-                  message: 'Title?',
-                  default: 'Your Default Title'
-                },
-                {
-                  config: 'author',
-                  message: 'Author?',
-                  default: 'Your Default Author'
-                },
-                {
-                  config: 'copyright',
-                  message: 'Copyright information?',
-                  default: 'Copyright Me'
-                }
-              ]
-            }
+            questions: [
+              {
+                config: 'layout',
+                message: 'Layout?',
+                default: 'post'
+              },
+              {
+                config: 'title',
+                message: 'Title?',
+                default: 'Your Default Title'
+              },
+              {
+                config: 'author',
+                message: 'Author?',
+                default: 'Your Default Author'
+              },
+              {
+                config: 'copyright',
+                message: 'Copyright information?',
+                default: 'Copyright Me'
+              }
+            ]
           },
 
         browserSync: {

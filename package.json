@@ -22,7 +22,7 @@
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest",
     "grunt-jekyll": "latest",
-    "grunt-jekyll-post": "^0.1.2",
+    "grunt-jekyll-post": "^0.2.0",
     "grunt-postcss": "latest",
     "time-grunt": "latest"
   }
