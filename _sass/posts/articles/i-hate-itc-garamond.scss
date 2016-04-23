@@ -1,8 +1,7 @@
-#i-hate-itc-garamond .post__content {
+#i-hate-itc-garamond {
 
 	a {
 		position: relative;
-		color: $red;
 
 		&::before {
 			content:attr(href);

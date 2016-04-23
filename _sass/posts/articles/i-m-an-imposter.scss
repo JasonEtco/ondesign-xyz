@@ -1,0 +1,10 @@
+#i-m-an-imposter {
+	@keyframes moving-forward {
+		0% {opacity: 0; transform: translateX(0)}
+		100% {opacity: 1; transform: translateX(3em)}
+	}
+
+	#moving-forward {
+		animation: moving-forward 2s infinite alternate ease-in-out;
+	}
+}
