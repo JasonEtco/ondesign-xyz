@@ -86,7 +86,7 @@ module.exports = function(grunt) {
             },
             pages: {
                 options: {
-                    remote: 'https://github.com/JasonEtco/type-texts.git',
+                    remote: 'https://github.com/JasonEtco/ondesign-xyz.git',
                     branch: 'gh-pages'
                 }
             }
@@ -132,7 +132,7 @@ module.exports = function(grunt) {
                 }
             }
         }
-       
+
     });
 
     grunt.loadNpmTasks('grunt-postcss');
