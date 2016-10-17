@@ -9,6 +9,7 @@
 	<title>On Design / Incomplete Manifesto for Growth</title>
 	<meta name="description" content="      Allow events to change you.    You have to be willing to grow. Growth is different from something that happens to you. You produce it. You live it. The...">
 	<meta name="keywords" content="graphic design, web design, front-end development, jason etcovitch, toronto">
+	<meta name="theme-color" content="#EF2424">
 
 	<link rel="stylesheet" href="/css/styles.css">
 	<link rel="canonical" href="http://ondesign.xyz/articles/incomplete-manifesto-for-growth/">
@@ -265,7 +266,22 @@
 
 	</div>
 
-	<footer class="site-footer scene-element sce">
+	<footer class="post__footer scene-element scene-element--fade-in-up">
+	
+	<span>Written by Bruce Mau</span>
+
+	<span>Next article: 
+	
+
+		<a href="/articles/improving-the-digital-reading-experience/" class="post__footer__next">Improving the Digital Reading Experience</a> by Information Architects
+
+	
+	</span>
+</footer>
+
+</article>
+
+<footer class="site-footer scene-element scene-element--fade-in-up">
 
 	<div class="footer__inner">
 		<h2 class="footer__title">Want to know when another article goes up?</h2>
@@ -284,8 +300,6 @@
 	</div>
 
 </footer>
-
-</article>
 
 <script>
 	// Wrap list items in div.list-item__inner
@@ -317,8 +331,10 @@
 		    current.firstChild.insertBefore(listAnchor, current.firstChild.firstChild)
 		}
 	}
-
-	wrapListItem('#incomplete-manifesto-for-growth li');
+	
+	if(!document.querySelector('.list-item__inner')) {
+		wrapListItem('#incomplete-manifesto-for-growth li');
+	}
 </script>
 
 		</main>
